@@ -1,90 +1,177 @@
-# Source Code and Development History
+# SubSeven Source Code, Programming Language and Development History
 
-This page separates the original SubSeven development lineage from later source-code claims, mirrors, forks, and the modern SubSeven Legacy recreation.
+This page separates **classic SubSeven source provenance**, later mirrors/forks, reverse-engineering/preservation material and the modern **SubSeven Legacy** recreation. They are not all the same codebase.
 
-## Classic implementation language
+## Quick source-provenance table
 
-SubSeven is historically associated with **Borland Delphi / Object Pascal** and the Windows VCL application ecosystem. This is consistent with the form-driven Windows interface style seen in the classic controller/builder applications and with later source-related preservation material.
+| Source / repository | What it represents | Archive classification |
+|---|---|---|
+| [`illwill/sub7` on GitLab](https://gitlab.com/illwill/sub7) | Publicly released classic Sub7 source-provenance tree associated with the 2.1.2/2.1.3 era | historical classic source provenance; linked, not mirrored as a buildable malware tree |
+| [`DarkCoderSc/SubSeven`](https://github.com/DarkCoderSc/SubSeven) | Official modern **SubSeven Legacy** recreation | modern non-malicious source; official Legacy project |
+| [`NoorahSmith/DarkCoderSc-SubSeven`](https://github.com/NoorahSmith/DarkCoderSc-SubSeven) | Later GitHub preservation/fork record | mirror/fork; not original classic authorship evidence |
+| [`pawpatrolryder/SubSeven-delphi-rat-`](https://github.com/pawpatrolryder/SubSeven-delphi-rat-) | Later GitHub preservation/derivative record | mirror/derivative; content must be evaluated separately |
+| [`xillwillx` GitHub profile](https://github.com/xillwillx) | Public account associated with illwill’s broader preservation/security work | researcher/source-provenance lead, not itself a Sub7 source tree |
 
-The archive does not assume a single compiler version across the entire 1999–2003 lifespan unless a surviving project file or contemporaneous document establishes it for a specific branch.
+> **Safety / preservation rule:** this archive documents and links source provenance but does not republish the classic source tree as a turnkey buildable malware package.
 
-## Classic application model
+---
 
-Later classic releases are documented around three major application roles:
+# Programming language
 
-- **Controller/client** — operator-facing Windows GUI used to interact with a connected server.
-- **Server component** — the remote component installed/run on the target Windows system.
-- **EditServer/builder** — application used to configure a server build.
+Classic SubSeven is historically associated with **Borland Delphi / Object Pascal** and the Windows VCL ecosystem.
 
-Additional later components include utilities such as `sin.exe`, ICQ-related support such as `ICQMAPI.dll`, and plugin-extension concepts.
+This is consistent with:
 
-This archive describes those roles historically without publishing deployment, persistence, credential-theft or evasion procedures.
+- the form-driven Windows GUI visible in the classic controller/editor applications;
+- historical `.pas`, `.dpr`, `.dfm`-style project evidence associated with Delphi applications;
+- the later source-provenance material;
+- the modern Legacy recreation, which intentionally continues the Delphi lineage.
 
-## Why source provenance is complicated
+The archive does **not** assume that every 1999–2003 release used exactly the same Delphi IDE/compiler version unless a specific project file, README or contemporary statement proves it.
 
-Several different things are commonly described online as "SubSeven source":
+## Common Delphi artifact types
 
-1. original/classic source material or claimed leaks;
-2. later mirrors/reuploads of claimed classic source;
-3. modern forks of those mirrors;
-4. complete rewrites or recreations inspired by SubSeven;
-5. analysis/decompilation projects that are not original source.
+| Extension | Historical development role |
+|---|---|
+| `.pas` | Object Pascal unit/source file |
+| `.dpr` | Delphi project program/source |
+| `.dfm` | Delphi form/resource definition; valuable for reconstructing UI layout |
+| `.res` | compiled Windows/Delphi resources |
+| `.dcu` | compiled Delphi unit; binary build artifact |
+| `.dpk` | Delphi package project in some component ecosystems |
+| `.bpl` | Delphi runtime/design package output in some component ecosystems |
+| `.dproj` | newer Delphi project metadata used in modern Delphi generations |
+| `.iss` | Inno Setup definition used by the modern Legacy installer projects |
 
-The archive therefore labels source links by **provenance claim**, not simply as "the source code."
+`.dfm` files are especially useful to historians because they can reveal form names, controls, menus, captions and layout relationships without running a historical executable.
 
-## Historical source-code record
+---
 
-A GitLab repository maintained under `illwill/sub7` has been circulated as a historical Sub7 2.1.2/2.1.3-era source-code record. It is useful for provenance research, but its relationship to the original development environment should be verified from project files, commit/import history, embedded strings, contemporaneous releases and independent historical testimony.
+# Classic application architecture
 
-Research link:
+Later well-documented classic releases revolve around three main application roles:
 
-- https://gitlab.com/illwill/sub7
+## Controller / client
 
-The public Rice2k archive does not mirror that classic buildable source tree.
+The operator-facing Windows GUI that exposed connection information and remote feature modules.
 
-## GitHub mirrors / related repositories
+Known later executable names include:
 
-Repositories supplied or located during research include:
+- `sub7.exe` — 2.2 material;
+- `SubSeven.exe` — Legends-era material.
 
-- https://github.com/NoorahSmith/DarkCoderSc-SubSeven
-- https://github.com/pawpatrolryder/SubSeven-delphi-rat-
-- https://github.com/xillwillx
+## Server
 
-These should be treated according to what they actually contain: mirror, fork, preservation copy, derivative or unrelated collection. Repository names alone are not proof of original authorship.
+The remote component in the classic client/server architecture.
 
-## Modern SubSeven Legacy
+Known later filename:
 
-The modern DarkCoderSc project is intentionally separated from the classic malware lineage:
+- `server.exe`.
 
-- https://github.com/DarkCoderSc/SubSeven
+## EditServer / builder/editor
 
-Its repository identifies Jean-Pierre LESUEUR / `DarkCoderSc` and Sub7Crew branding in setup/project material. It is a modern Delphi recreation and its project documentation describes a non-malicious design rather than an attempt to redistribute the original operational RAT.
+The server configuration/editor application used by later packages.
 
-### Auditable Legacy project structure
+Known name:
 
-The modern repository contains distinct application/project areas corresponding to:
+- `EditServer.exe` / `editserver.exe`.
 
-- Viewer
-- Service
-- Tray / service controller
-- Helper
-- Certificate generator
-- Secure Desktop component
-- shared/common libraries
-- setup/install definitions
+Additional later components include `sin.exe`, ICQ support material such as `ICQMAPI.dll`, and 2.2’s plugin-extension design.
 
-### Setup manifests
+---
 
-The Inno Setup definitions identify build outputs and dependencies for both x86 and x64 variants.
+# Historical classic source-code provenance: `illwill/sub7`
 
-Viewer-side setup references include:
+Public research link:
+
+- **https://gitlab.com/illwill/sub7**
+
+A locally preserved screenshot of the repository identifies it as **“Source code for SubSeven 2.1.3.”** The visible repository tree includes areas named:
+
+- `Keylogger`
+- `[BINS]`
+- `client`
+- `editserver.new`
+- `server`
+- `Compile_Test.gif`
+- `README.md`
+- `rxlib275.zip`
+
+The visible README text in that capture describes the material as **Sub7 2.1.2 source received directly from mobman**, and says it was released publicly to coincide with the **BSidesCT event on 30 September 2023**. It also discusses missing Delphi 4-era components and historical compilation work in a Windows 98/Delphi 4 environment.
+
+That apparent 2.1.2-vs-2.1.3 naming discrepancy is historically important and is preserved here rather than “corrected” into one simplified claim.
+
+## Independent conference corroboration
+
+The official **BSidesCT 2023** schedule lists illwill’s talk **“Finding mobman”** on 30 September 2023 and describes the presentation as covering the history of SubSeven, the search for mobman and the acquisition of **Sub7 2.1.3’s source code**.
+
+- [BSidesCT 2023 archive — Finding mobman](https://www.bsidesct.org/archives/2023/)
+
+This independently supports the public-release/source-acquisition event, even though detailed branch labeling in the repository itself still deserves careful source-level study.
+
+## Preserved screenshot
+
+The archive includes a locally found capture of the source repository under `assets/images/source-code/` so future researchers can see how the public source-provenance page was presented at the time of preservation.
+
+## What this source can help historians answer
+
+Without turning it into a build guide, source/form analysis can help reconstruct:
+
+- form/window names;
+- menu organization;
+- relationships between controller, server and EditServer projects;
+- UI resources and images;
+- Delphi unit names;
+- feature-module boundaries;
+- library/component dependencies;
+- protocol/message naming at a descriptive level;
+- differences between the public source tree and surviving binary release screenshots;
+- whether later mirrors contain identical or modified trees.
+
+---
+
+# Modern SubSeven Legacy source
+
+Official repository:
+
+- **https://github.com/DarkCoderSc/SubSeven**
+
+The official README states that SubSeven Legacy is written in **Delphi** like the original project but **does not include malicious features**.
+
+Its documented goals/features include:
+
+- a SubSeven **2.2.x-inspired VCL/WinAPI UX**;
+- direct socket communication with modern OpenSSL support;
+- multithreading/concurrency;
+- File Manager;
+- Process Manager;
+- Remote Terminal;
+- Windows Session Manager.
+
+## Modern Legacy project structure
+
+The repository/setup material exposes distinct project areas corresponding to:
+
+- Viewer/controller;
+- Windows Service;
+- Server Tray / service-controller UI;
+- Helper application;
+- certificate generator;
+- Secure Desktop component;
+- shared/common source;
+- resources;
+- setup/install definitions.
+
+## Known modern build outputs / dependencies
+
+Viewer-side setup material references:
 
 - `Sub7Viewer.exe`
 - `CertGenerator.exe`
 - `bass.dll`
 - OpenSSL `libcrypto` / `libssl` DLLs
 
-Server-side setup references include:
+Server-side setup material references:
 
 - `Sub7Service.exe`
 - `Sub7Helper.exe`
@@ -94,50 +181,95 @@ Server-side setup references include:
 - `bass.dll`
 - OpenSSL `libcrypto` / `libssl` DLLs
 
-These are **modern Legacy build outputs/dependencies**, not evidence that the same filenames existed in classic 1999 releases.
+These names belong to the **modern Legacy project**. They must not be projected backward as evidence that those filenames existed in original 1999 releases.
 
-## Dependency distinction
+See [`../data/manifests/legacy-0-1-alpha-files.csv`](../data/manifests/legacy-0-1-alpha-files.csv).
 
-The Legacy repository contains binary dependencies such as x86/x64 BASS and OpenSSL libraries. They are ordinary modern dependencies and are classified separately from classic SubSeven payloads.
+---
 
-The archive records architecture, path, size and repository provenance where verified.
+# Mirrors and forks
 
-## Delphi project/source artifacts
+A repository being named “SubSeven” does not automatically make it original source. Each candidate is classified by:
 
-For historical development research, relevant source/project artifact types include:
+- upstream repository relationship;
+- commit/import history;
+- README provenance claims;
+- file-tree similarity;
+- embedded project/version strings;
+- Delphi project metadata;
+- whether it is classic source, a Legacy fork, a reupload or a derivative.
 
-- `.pas` — Object Pascal units
-- `.dpr` — Delphi project source
-- `.dfm` — Delphi form definitions/resources
-- `.dproj` — newer Delphi project metadata
-- `.res` — Windows/Delphi resources
-- `.iss` — Inno Setup installer definitions in the modern Legacy project
+## `NoorahSmith/DarkCoderSc-SubSeven`
 
-The presence of those formats can help reconstruct UI layout, modules, forms and build relationships without requiring malware execution.
+- https://github.com/NoorahSmith/DarkCoderSc-SubSeven
 
-## Safe historical analysis approach
+Treat as a later mirror/fork record unless its commit history establishes something more specific.
 
-Useful development-history questions that can be answered without operating the classic malware include:
+## `pawpatrolryder/SubSeven-delphi-rat-`
 
-- What forms/windows existed in a particular release?
-- Which menu categories changed between releases?
-- Which files were shipped together?
-- Which DLLs were first documented in a branch?
-- Which Delphi units/forms corresponded to visible interface features?
-- What compiler/project metadata survives?
-- How did installer/package naming change?
-- Which website or README first mentioned a feature/plugin?
-- Which later mirrors contain identical source trees versus modified forks?
+- https://github.com/pawpatrolryder/SubSeven-delphi-rat-
 
-## Research rule
+Treat as a later preservation/derivative record and inspect content/provenance before assigning it to a classic branch.
 
-Do not merge classic and Legacy evidence into one undifferentiated file list. Every source/component record should carry at least:
+## `rutherfordwj/SubSevenLegacy`
 
-- branch/version
-- filename/path
-- artifact type
-- source/repository
-- provenance confidence
-- whether it is classic, later continuation, mirror, or Legacy
+- https://github.com/rutherfordwj/SubSevenLegacy
 
-The canonical cross-version inventory is maintained in [`../data/file-inventory.csv`](../data/file-inventory.csv).
+A later Legacy-related fork/archive that may be useful for comparing modern project history, dependencies and README changes.
+
+---
+
+# Source-code timeline
+
+| Period | Source/development significance |
+|---|---|
+| 1999 | Original Delphi SubSeven development begins; rapid 1.x releases. |
+| 1999–2000 | 2.0/2.1.x generation expands controller and feature architecture. |
+| 2001 | 2.2 redesign introduces stronger modular/plugin direction. |
+| 2003 | 2.1.5 Legends becomes the late original-era release. |
+| 2010 | Later 2.3 continuation/revival appears in historical summaries. |
+| 2021+ | DarkCoderSc/Sub7Crew develops modern non-malicious SubSeven Legacy in Delphi. |
+| 30 Sep 2023 | BSidesCT “Finding mobman” presentation documents acquisition of classic source; `illwill/sub7` becomes a public source-provenance reference. |
+
+---
+
+# What is and is not mirrored here
+
+## Mirrored/preserved directly
+
+- screenshots of source-repository pages;
+- safe project metadata/inventories;
+- modern Legacy repository links and non-malicious project documentation;
+- source-provenance timelines;
+- filenames/project names;
+- research notes about forms, dependencies and version relationships.
+
+## Linked/documented but not republished as buildable classic malware
+
+- the classic `illwill/sub7` source tree;
+- classic server/client payload source where it would turn this archive into a malware build/distribution package;
+- operational deployment/evasion/persistence instructions.
+
+This preserves the historical source record while keeping the repository focused on education, digital preservation and defensive research.
+
+---
+
+# Research checklist for future source comparison
+
+For each source/mirror candidate, record:
+
+1. claimed SubSeven version;
+2. repository/import date;
+3. upstream/fork relationship;
+4. Delphi compiler/project clues;
+5. top-level project folders;
+6. `.dpr` project names;
+7. `.dfm` form names;
+8. notable component/library dependencies;
+9. version strings in forms/resources;
+10. whether the tree contains controller, server and EditServer projects;
+11. differences from `illwill/sub7` or official Legacy;
+12. screenshot/UI correspondence with known releases;
+13. provenance confidence.
+
+The canonical cross-version file inventory remains [`../data/file-inventory.csv`](../data/file-inventory.csv), while locally preserved historical package/source records are in [`../data/historical-file-inventory.csv`](../data/historical-file-inventory.csv).
