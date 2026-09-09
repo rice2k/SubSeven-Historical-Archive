@@ -97,7 +97,7 @@ A locally preserved screenshot of the repository identifies it as **“Source co
 - `README.md`
 - `rxlib275.zip`
 
-The visible README text in that capture describes the material as **Sub7 2.1.2 source received directly from mobman**, and says it was released publicly to coincide with the **BSidesCT event on 30 September 2023**. It also discusses missing Delphi 4-era components and historical compilation work in a Windows 98/Delphi 4 environment.
+The visible README text in that capture describes the material as **Sub7 2.1.2 source received directly from mobman**, and says it was released publicly to coincide with the **BSidesCT event on 30 September 2023**. It also discusses missing Delphi-era components and historical efforts to reconstruct the development environment.
 
 That apparent 2.1.2-vs-2.1.3 naming discrepancy is historically important and is preserved here rather than “corrected” into one simplified claim.
 
@@ -111,7 +111,13 @@ This independently supports the public-release/source-acquisition event, even th
 
 ## Preserved screenshot
 
-The archive includes a locally found capture of the source repository under `assets/images/source-code/` so future researchers can see how the public source-provenance page was presented at the time of preservation.
+<a href="../assets/images/illwill-sub7-source-provenance.jpg"><img src="../assets/images/illwill-sub7-source-provenance.jpg" alt="illwill Sub7 source repository provenance screenshot" width="760"></a>
+
+**Repository-hosted copy:** [`assets/images/illwill-sub7-source-provenance.jpg`](../assets/images/illwill-sub7-source-provenance.jpg)  
+**Raw image:** https://raw.githubusercontent.com/rice2k/SubSeven-Historical-Archive/main/assets/images/illwill-sub7-source-provenance.jpg  
+**Live source page:** https://gitlab.com/illwill/sub7
+
+This screenshot preserves how the public source-provenance page and visible repository tree appeared when captured. It is a historical research image, not a mirrored source tree.
 
 ## What this source can help historians answer
 
