@@ -26,12 +26,15 @@ The following are physically stored under `assets/images/`:
 |---|---|
 | `classic-subseven-interface.jpg` | representative classic controller/interface image |
 | `subseven-art-gallery.png` | historical artwork/icon reference |
+| `illwill-sub7-source-provenance.jpg` | preserved classic-source provenance/repository capture |
 | `wayback-sub7-reference.jpg` | Wayback/archive research reference |
 | `wayback-sub7-org-2001-retry.jpg` | Sub7.org 2001 archive retry record |
 | `wayback-sub7crew-org-2001-retry.jpg` | Sub7Crew.org 2001 archive retry record |
 | `wayback-otenet-sub7-files-2002-retry.jpg` | users.otenet.gr Sub7 Files/Extras 2002 archive retry record |
 
 The three `retry` images are preserved as evidence of archive-research attempts. They are **not** presented as screenshots of the original historical site designs.
+
+The `illwill` image is a provenance capture of the public source repository. It is not a malware binary or a copy of the source tree.
 
 Canonical visual index: [`image-gallery.md`](image-gallery.md)
 
@@ -62,6 +65,7 @@ Canonical visual index: [`image-gallery.md`](image-gallery.md)
 - `data/releases.csv`
 - `data/resource-links.csv`
 - `data/restricted-artifacts-manifest.csv`
+- `data/screenshot-index.csv` — canonical image/screenshot hosting and source map
 - `data/secondary-source-index.csv`
 - `data/version-feature-matrix.csv`
 - `data/website-history.csv`
@@ -89,21 +93,9 @@ This is labeled as a modern fan/history artifact rather than an original 1999–
 
 The image gallery also contains source-backed screenshot links for classic releases including 1.0, 1.4, 1.9, 1.9 Apocalypse, 2.1.2 M.U.I.E, 2.1.4 DEFCON 8, 2.2 and 2.1.5 Legends, plus a Wikimedia Commons 2.2 README screenshot and modern SubSeven Legacy screenshots.
 
-Those are not yet all mirrored as repository-hosted files. Each has a source-page fallback so a remote-image failure does not destroy the research trail.
+Those images are source-linked rather than all being mirrored into this repository. Each has a source-page fallback so a remote-image failure does not destroy the research trail.
 
-See [`image-gallery.md`](image-gallery.md).
-
----
-
-# Known visual record not yet physically uploaded
-
-- `illwill/Sub7` source-repository capture showing the public source-project tree and its `Source code for SubSeven 2.1.3` project description.
-
-The source page remains documented at:
-
-- https://gitlab.com/illwill/sub7
-
-Duplicate visual records remain in `data/historical-file-inventory.csv`.
+See [`image-gallery.md`](image-gallery.md) and [`../data/screenshot-index.csv`](../data/screenshot-index.csv).
 
 ---
 
@@ -148,7 +140,7 @@ These files are cataloged so researchers can identify them, compare filenames/si
 
 ## Classic source-code material
 
-The repository links and documents the public `illwill/sub7` source-provenance project and related mirrors/derivatives, but this repository does not import a directly buildable classic RAT source tree into its own file hierarchy.
+The repository links and documents the public `illwill/sub7` source-provenance project and related mirrors/derivatives, and now also hosts a screenshot of that public repository for preservation. It does not import a directly buildable classic RAT source tree into its own file hierarchy.
 
 See [`source-code-and-development.md`](source-code-and-development.md).
 
