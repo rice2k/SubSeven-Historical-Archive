@@ -1,15 +1,17 @@
 # SubSeven / Sub7 Historical Archive
 
 <p align="center">
-  <img src="assets/images/classic-subseven-interface.jpg" alt="Classic SubSeven controller interface" width="760">
+  <a href="docs/image-gallery.md"><img src="assets/images/classic-subseven-interface.jpg" alt="Classic SubSeven controller interface" width="760"></a>
 </p>
 
 <p align="center">
-  <img alt="Historical archive" src="https://img.shields.io/badge/type-historical%20archive-7c3aed">
-  <img alt="Coverage" src="https://img.shields.io/badge/coverage-1999%E2%86%92present-2563eb">
-  <img alt="Language" src="https://img.shields.io/badge/classic%20language-Delphi%20%2F%20Object%20Pascal-d97706">
-  <img alt="Purpose" src="https://img.shields.io/badge/purpose-cybersecurity%20history-059669">
-  <img alt="Duplicates" src="https://img.shields.io/badge/duplicates-preserved%20%26%20labeled-475569">
+  <a href="docs/archive-source-provenance.md"><img alt="Historical archive" src="https://img.shields.io/badge/type-historical%20archive-7c3aed"></a>
+  <a href="docs/version-and-file-history.md"><img alt="Coverage" src="https://img.shields.io/badge/coverage-1999%E2%86%92present-2563eb"></a>
+  <a href="docs/source-code-and-development.md"><img alt="Language" src="https://img.shields.io/badge/classic%20language-Delphi%20%2F%20Object%20Pascal-d97706"></a>
+  <a href="docs/safety-and-scope.md"><img alt="Purpose" src="https://img.shields.io/badge/purpose-cybersecurity%20history-059669"></a>
+  <a href="data/historical-file-inventory.csv"><img alt="Duplicates" src="https://img.shields.io/badge/duplicates-preserved%20%26%20labeled-475569"></a>
+  <a href="docs/image-gallery.md"><img alt="Screenshots" src="https://img.shields.io/badge/screenshots-open%20gallery-0ea5e9"></a>
+  <a href="docs/repository-file-status.md"><img alt="File status" src="https://img.shields.io/badge/files-hosted%20vs%20not%20hosted-334155"></a>
 </p>
 
 > **Educational / historical cybersecurity archive.** This repository reconstructs the history of **SubSeven / Sub7**, one of the best-known Windows remote-access trojans of the late 1990s and early 2000s: releases, features, interfaces, developers/community, applications, EXE/DLL records, source-code provenance, websites, Wayback captures, screenshots, old documentation, distribution history and defensive context.
@@ -32,6 +34,7 @@
 | **People and community** | [`docs/people-and-community.md`](docs/people-and-community.md) |
 | **AOL / ICQ / IRC / social history** | [`docs/social-history.md`](docs/social-history.md) |
 | **Historical files found locally** | [`docs/local-archive-findings.md`](docs/local-archive-findings.md) |
+| **What is actually hosted vs not hosted** | [`docs/repository-file-status.md`](docs/repository-file-status.md) |
 | **Image / screenshot gallery** | [`docs/image-gallery.md`](docs/image-gallery.md) |
 | **Link and image audit** | [`docs/link-audit.md`](docs/link-audit.md) |
 | **Preservation / research access** | [`docs/preservation-and-research-access.md`](docs/preservation-and-research-access.md) |
@@ -286,6 +289,7 @@ A substantial local preservation collection contains release/package records, UR
 Additional records include `sub7_1_9.zip`, `subseven20.zip`, `SubSeven And Windows XP.rar`, `Sub7.net Default md5sum values.rar`, two historical tutorial archives, `sub7-main.rar`, `subpass.zip` / duplicate and `subuster.zip`.
 
 - [Detailed local archive findings](docs/local-archive-findings.md)
+- [What is hosted vs not hosted](docs/repository-file-status.md)
 - [Every historical record including duplicates](data/historical-file-inventory.csv)
 - [Package-only table](data/historical-package-records.csv)
 - [Restricted artifact manifest](data/restricted-artifacts-manifest.csv)
@@ -328,23 +332,25 @@ Historical local URL crawls preserve old paths for help/reference, IRC, forums, 
 
 # Visual archive
 
-<p align="center">
-  <img src="assets/images/subseven-art-gallery.png" alt="SubSeven historical artwork and icons" width="760">
-</p>
-
-Current visual records include:
-
-- classic controller/interface imagery;
-- SubSeven artwork/icon sheet;
-- Wayback research/reference captures;
-- source-code repository capture/provenance records;
-- version-specific external screenshot/release pages linked from the detailed version history.
+The main README intentionally shows only a small preview. The full gallery contains repository-hosted images plus version-specific classic screenshots and modern Legacy screenshots with source-page fallbacks.
 
 <p align="center">
-  <img src="assets/images/wayback-sub7-reference.jpg" alt="SubSeven Wayback research reference" width="520">
+  <a href="docs/image-gallery.md"><img src="assets/images/subseven-art-gallery.png" alt="SubSeven historical artwork and icons" width="760"></a>
 </p>
 
-- [Open the canonical image gallery](docs/image-gallery.md)
+<p align="center">
+  <a href="https://www.malware.museum/release/subseven/22/"><img src="https://www.malware.museum/media/resources/2024/03/12/910392e5-f67f-489b-8b6e-17adc0290ff4.png" alt="SubSeven 2.2 screenshot" width="360"></a>
+  <a href="https://github.com/DarkCoderSc/SubSeven"><img src="https://raw.githubusercontent.com/DarkCoderSc/SubSeven/main/Assets/screenshots/main.png" alt="SubSeven Legacy main viewer" width="360"></a>
+</p>
+
+**Preview above:** classic 2.2 source-page image and the modern non-malicious Legacy viewer. If a remote image fails, click it to open its source page.
+
+<p align="center">
+  <a href="docs/image-gallery.md"><img src="assets/images/wayback-sub7-reference.jpg" alt="SubSeven Wayback research reference" width="520"></a>
+</p>
+
+- [Open the full screenshot/image gallery](docs/image-gallery.md)
+- [See what image/files are physically hosted](docs/repository-file-status.md)
 - [Open the link/image audit](docs/link-audit.md)
 - [View duplicate image records](data/historical-file-inventory.csv)
 
@@ -361,7 +367,7 @@ Safe historical material is being copied into this repository wherever practical
 
 If the original local preservation set is going to be deleted, keep a separate offline copy of every **metadata-only restricted artifact**; GitHub is not intended to be the sole backup of those runnable originals.
 
-See [`docs/preservation-and-research-access.md`](docs/preservation-and-research-access.md).
+See [`docs/preservation-and-research-access.md`](docs/preservation-and-research-access.md) and [`docs/repository-file-status.md`](docs/repository-file-status.md).
 
 ---
 
@@ -392,7 +398,7 @@ The repository includes a standalone relative-link/image validator:
 python tools/check_internal_links.py
 ```
 
-Audit details and Wayback fallback guidance are maintained in [`docs/link-audit.md`](docs/link-audit.md).
+Audit details, image fallbacks, and Wayback fallback guidance are maintained in [`docs/link-audit.md`](docs/link-audit.md).
 
 ---
 
