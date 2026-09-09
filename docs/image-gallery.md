@@ -1,10 +1,11 @@
 # SubSeven / Sub7 Image & Screenshot Gallery
 
-This is the canonical visual index for the archive. Images are split into **repository-hosted**, **externally sourced**, and **inventory-only** records so researchers can immediately tell what is actually preserved here.
+This is the canonical visual index for the archive. Images are split into **repository-hosted**, **externally sourced**, and **source-page-only** records so researchers can immediately tell what is actually preserved here.
 
 > **Version-label rule:** a screenshot is assigned to a specific SubSeven version only when its source identifies that version. Otherwise it is labeled as classic-family, source-provenance, website/archive, or modern Legacy material.
 
-Machine-readable index: [`../data/screenshot-index.csv`](../data/screenshot-index.csv)
+Machine-readable index: [`../data/screenshot-index.csv`](../data/screenshot-index.csv)  
+Release coverage map: [`version-screenshot-status.md`](version-screenshot-status.md)
 
 ---
 
@@ -60,72 +61,66 @@ The archive preserves the 2.1.2-vs-2.1.3 labeling discrepancy rather than silent
 
 ---
 
-## Sub7.org — 2001 archive retry record
+## Archived-site retry records
 
-<a href="../assets/images/wayback-sub7-org-2001-retry.jpg"><img src="../assets/images/wayback-sub7-org-2001-retry.jpg" alt="Sub7.org 2001 Wayback retry record" width="360"></a>
+These are preserved because they document research attempts and historical URLs, but they are **not original website design screenshots**.
 
-**Open:** [GitHub image](../assets/images/wayback-sub7-org-2001-retry.jpg) · [Raw image](https://raw.githubusercontent.com/rice2k/SubSeven-Historical-Archive/main/assets/images/wayback-sub7-org-2001-retry.jpg)
-
-**Repository path:** `assets/images/wayback-sub7-org-2001-retry.jpg`  
-**Classification:** research-attempt evidence. The image says the archive screenshot was pending/unavailable; it is **not** a screenshot of the historical site's original design.
-
----
-
-## Sub7Crew.org — 2001 archive retry record
-
-<a href="../assets/images/wayback-sub7crew-org-2001-retry.jpg"><img src="../assets/images/wayback-sub7crew-org-2001-retry.jpg" alt="Sub7Crew.org 2001 Wayback retry record" width="360"></a>
-
-**Open:** [GitHub image](../assets/images/wayback-sub7crew-org-2001-retry.jpg) · [Raw image](https://raw.githubusercontent.com/rice2k/SubSeven-Historical-Archive/main/assets/images/wayback-sub7crew-org-2001-retry.jpg)
-
-**Repository path:** `assets/images/wayback-sub7crew-org-2001-retry.jpg`  
-**Classification:** research-attempt evidence, not an original site-layout screenshot.
-
----
-
-## users.otenet.gr — Sub7 Files and Extras — 2002 archive retry record
-
-<a href="../assets/images/wayback-otenet-sub7-files-2002-retry.jpg"><img src="../assets/images/wayback-otenet-sub7-files-2002-retry.jpg" alt="users.otenet.gr Sub7 Files and Extras 2002 Wayback retry record" width="360"></a>
-
-**Open:** [GitHub image](../assets/images/wayback-otenet-sub7-files-2002-retry.jpg) · [Raw image](https://raw.githubusercontent.com/rice2k/SubSeven-Historical-Archive/main/assets/images/wayback-otenet-sub7-files-2002-retry.jpg)
-
-**Repository path:** `assets/images/wayback-otenet-sub7-files-2002-retry.jpg`  
-**Classification:** research-attempt evidence, not an original page-layout screenshot.
+<table>
+<tr>
+<td align="center"><a href="../assets/images/wayback-sub7-org-2001-retry.jpg"><img src="../assets/images/wayback-sub7-org-2001-retry.jpg" width="260" alt="Sub7.org 2001 Wayback retry record"></a><br><b>Sub7.org — 2001 retry</b></td>
+<td align="center"><a href="../assets/images/wayback-sub7crew-org-2001-retry.jpg"><img src="../assets/images/wayback-sub7crew-org-2001-retry.jpg" width="260" alt="Sub7Crew.org 2001 Wayback retry record"></a><br><b>Sub7Crew.org — 2001 retry</b></td>
+<td align="center"><a href="../assets/images/wayback-otenet-sub7-files-2002-retry.jpg"><img src="../assets/images/wayback-otenet-sub7-files-2002-retry.jpg" width="260" alt="users.otenet.gr Sub7 Files and Extras 2002 Wayback retry record"></a><br><b>Sub7 Files/Extras — 2002 retry</b></td>
+</tr>
+</table>
 
 ---
 
 # Classic version screenshots from Malware Museum
 
-The following images are shown from their research-source host. Each image links to its release page, which remains the fallback if a hotlink or GitHub Camo cache fails.
+These release-specific screenshots are loaded from their research source. **Clicking any image opens the corresponding release page**, which remains useful even if GitHub Camo or the direct media URL fails.
 
 <table>
 <tr>
-<td align="center"><a href="https://www.malware.museum/release/subseven/10/"><img src="https://www.malware.museum/media/resources/2023/08/28/eef1034d-4380-451a-95b0-f8677edcc663.png" width="330" alt="SubSeven 1.0 screenshot"></a><br><b>SubSeven 1.0</b><br><a href="https://www.malware.museum/release/subseven/10/">source page</a></td>
-<td align="center"><a href="https://www.malware.museum/release/subseven/14/"><img src="https://www.malware.museum/media/resources/2023/08/29/653aa774-8bfc-41f8-9daa-9f3fcc7ffce6.png" width="330" alt="SubSeven 1.4 screenshot"></a><br><b>SubSeven 1.4</b><br><a href="https://www.malware.museum/release/subseven/14/">source page</a></td>
+<td align="center"><a href="https://www.malware.museum/release/subseven/10/"><img src="https://www.malware.museum/media/resources/2023/08/28/eef1034d-4380-451a-95b0-f8677edcc663.png" width="300" alt="SubSeven 1.0 screenshot"></a><br><b>1.0</b></td>
+<td align="center"><a href="https://www.malware.museum/release/subseven/11/"><img src="https://www.malware.museum/media/resources/2023/08/29/9c12cde9-d88d-44af-9ad8-26c57e1141be.png" width="300" alt="SubSeven 1.1 screenshot"></a><br><b>1.1</b></td>
 </tr>
 <tr>
-<td align="center"><a href="https://www.malware.museum/release/subseven/19/"><img src="https://www.malware.museum/media/resources/2023/08/29/7b2fa162-cb61-4064-b49b-712333a85120.png" width="330" alt="SubSeven 1.9 screenshot"></a><br><b>SubSeven 1.9</b><br><a href="https://www.malware.museum/release/subseven/19/">source page</a></td>
-<td align="center"><a href="https://www.malware.museum/release/subseven/19-apocalypse/"><img src="https://www.malware.museum/media/resources/2023/08/29/29a118fa-f50f-40d0-968b-9c0514cf756f.png" width="330" alt="SubSeven 1.9 Apocalypse screenshot"></a><br><b>1.9 Apocalypse</b><br><a href="https://www.malware.museum/release/subseven/19-apocalypse/">source page</a></td>
+<td align="center"><a href="https://www.malware.museum/release/subseven/12/"><img src="https://www.malware.museum/media/resources/2023/08/29/108fcdc2-a583-4640-b11c-c1b4d9c2f59c.png" width="300" alt="SubSeven 1.2 screenshot"></a><br><b>1.2</b></td>
+<td align="center"><a href="https://www.malware.museum/release/subseven/14/"><img src="https://www.malware.museum/media/resources/2023/08/29/653aa774-8bfc-41f8-9daa-9f3fcc7ffce6.png" width="300" alt="SubSeven 1.4 screenshot"></a><br><b>1.4</b></td>
 </tr>
 <tr>
-<td align="center"><a href="https://www.malware.museum/release/subseven/212-muie/"><img src="https://www.malware.museum/media/resources/2023/08/29/1c037701-4805-43cd-98c2-8fab9e28acf4.png" width="330" alt="SubSeven 2.1.2 M.U.I.E screenshot"></a><br><b>2.1.2 M.U.I.E</b><br><a href="https://www.malware.museum/release/subseven/212-muie/">source page</a></td>
-<td align="center"><a href="https://www.malware.museum/release/subseven/214-defcon-8/"><img src="https://www.malware.museum/media/resources/2023/08/29/9c7f1a88-37c0-469f-a589-338bb553746d.png" width="330" alt="SubSeven 2.1.4 DEFCON 8 screenshot"></a><br><b>2.1.4 DEFCON 8</b><br><a href="https://www.malware.museum/release/subseven/214-defcon-8/">source page</a></td>
+<td align="center"><a href="https://www.malware.museum/release/subseven/15/"><img src="https://www.malware.museum/media/resources/2023/08/29/944b48e2-51ef-4ab8-a1d5-b1ab6ac2dbd8.png" width="300" alt="SubSeven 1.5 screenshot"></a><br><b>1.5</b></td>
+<td align="center"><a href="https://www.malware.museum/release/subseven/16/"><img src="https://www.malware.museum/media/resources/2023/08/29/f42cf4a5-2c75-4411-9f91-98fa5b3e4826.png" width="300" alt="SubSeven 1.6 screenshot"></a><br><b>1.6</b></td>
 </tr>
 <tr>
-<td align="center"><a href="https://www.malware.museum/release/subseven/22/"><img src="https://www.malware.museum/media/resources/2024/03/12/910392e5-f67f-489b-8b6e-17adc0290ff4.png" width="330" alt="SubSeven 2.2 screenshot"></a><br><b>SubSeven 2.2</b><br><a href="https://www.malware.museum/release/subseven/22/">source page</a></td>
-<td align="center"><a href="https://www.malware.museum/release/subseven/215-legends/"><img src="https://www.malware.museum/media/resources/2026/04/05/a25a3e21-01fb-43b4-8ac2-fb54249d8986.png" width="330" alt="SubSeven 2.1.5 Legends screenshot"></a><br><b>2.1.5 Legends</b><br><a href="https://www.malware.museum/release/subseven/215-legends/">source page</a></td>
+<td align="center"><a href="https://www.malware.museum/release/subseven/17/"><img src="https://www.malware.museum/media/resources/2023/08/29/6bac5ab1-bcd9-45c0-b28b-24460199115d.png" width="300" alt="SubSeven 1.7 screenshot"></a><br><b>1.7</b></td>
+<td align="center"><a href="https://www.malware.museum/release/subseven/18/"><img src="https://www.malware.museum/media/resources/2023/08/29/4bac3aaf-aa7f-4c88-9b4b-007d56cfb876.png" width="300" alt="SubSeven 1.8 screenshot"></a><br><b>1.8</b></td>
+</tr>
+<tr>
+<td align="center"><a href="https://www.malware.museum/release/subseven/19/"><img src="https://www.malware.museum/media/resources/2023/08/29/7b2fa162-cb61-4064-b49b-712333a85120.png" width="300" alt="SubSeven 1.9 screenshot"></a><br><b>1.9</b></td>
+<td align="center"><a href="https://www.malware.museum/release/subseven/19-apocalypse/"><img src="https://www.malware.museum/media/resources/2023/08/29/29a118fa-f50f-40d0-968b-9c0514cf756f.png" width="300" alt="SubSeven 1.9 Apocalypse screenshot"></a><br><b>1.9 Apocalypse</b></td>
+</tr>
+<tr>
+<td align="center"><a href="https://www.malware.museum/release/subseven/20/"><img src="https://www.malware.museum/media/resources/2023/08/29/901ccef7-7e00-4264-8b40-9556c68b9460.png" width="300" alt="SubSeven 2.0 screenshot"></a><br><b>2.0</b></td>
+<td align="center"><a href="https://www.malware.museum/release/subseven/211-gold-edition/"><img src="https://www.malware.museum/media/resources/2023/08/29/4bd4ff32-7029-48dd-8b14-b0cee7031b2f.png" width="300" alt="SubSeven 2.1.1 GOLD screenshot"></a><br><b>2.1.1 GOLD</b></td>
+</tr>
+<tr>
+<td align="center"><a href="https://www.malware.museum/release/subseven/212-muie/"><img src="https://www.malware.museum/media/resources/2023/08/29/1c037701-4805-43cd-98c2-8fab9e28acf4.png" width="300" alt="SubSeven 2.1.2 M.U.I.E screenshot"></a><br><b>2.1.2 M.U.I.E</b></td>
+<td align="center"><a href="https://www.malware.museum/release/subseven/214-defcon-8/"><img src="https://www.malware.museum/media/resources/2023/08/29/9c7f1a88-37c0-469f-a589-338bb553746d.png" width="300" alt="SubSeven 2.1.4 DEFCON 8 screenshot"></a><br><b>2.1.4 DEFCON 8</b></td>
+</tr>
+<tr>
+<td align="center"><a href="https://www.malware.museum/release/subseven/22/"><img src="https://www.malware.museum/media/resources/2024/03/12/910392e5-f67f-489b-8b6e-17adc0290ff4.png" width="300" alt="SubSeven 2.2 screenshot"></a><br><b>2.2</b></td>
+<td align="center"><a href="https://www.malware.museum/release/subseven/215-legends/"><img src="https://www.malware.museum/media/resources/2026/04/05/a25a3e21-01fb-43b4-8ac2-fb54249d8986.png" width="300" alt="SubSeven 2.1.5 Legends screenshot"></a><br><b>2.1.5 Legends</b></td>
 </tr>
 </table>
 
-Source-page fallbacks:
+### Release pages with screenshot sections still awaiting direct-media indexing
 
-- [1.0](https://www.malware.museum/release/subseven/10/)
-- [1.4](https://www.malware.museum/release/subseven/14/)
-- [1.9](https://www.malware.museum/release/subseven/19/)
-- [1.9 Apocalypse](https://www.malware.museum/release/subseven/19-apocalypse/)
-- [2.1.2 M.U.I.E](https://www.malware.museum/release/subseven/212-muie/)
-- [2.1.4 DEFCON 8](https://www.malware.museum/release/subseven/214-defcon-8/)
-- [2.2](https://www.malware.museum/release/subseven/22/)
-- [2.1.5 Legends](https://www.malware.museum/release/subseven/215-legends/)
+- [SubSeven 1.3](https://www.malware.museum/release/subseven/13/)
+- [SubSeven 2.1](https://www.malware.museum/release/subseven/21/)
+- [SubSeven 2.1.3 BONUS](https://www.malware.museum/release/subseven/213-bonus/)
+
+The release pages themselves are retained even before the direct image URL is known, so the visual evidence is not lost from the catalog.
 
 ---
 
@@ -145,16 +140,16 @@ These are hosted in the official `DarkCoderSc/SubSeven` repository. Each image l
 
 <table>
 <tr>
-<td align="center"><a href="https://github.com/DarkCoderSc/SubSeven"><img src="https://raw.githubusercontent.com/DarkCoderSc/SubSeven/main/Assets/screenshots/main.png" width="330" alt="SubSeven Legacy main viewer"></a><br><b>Main viewer</b></td>
-<td align="center"><a href="https://github.com/DarkCoderSc/SubSeven"><img src="https://raw.githubusercontent.com/DarkCoderSc/SubSeven/main/Assets/screenshots/main-key.png" width="330" alt="SubSeven Legacy certificate information"></a><br><b>Certificate / key information</b></td>
+<td align="center"><a href="https://github.com/DarkCoderSc/SubSeven"><img src="https://raw.githubusercontent.com/DarkCoderSc/SubSeven/main/Assets/screenshots/main.png" width="300" alt="SubSeven Legacy main viewer"></a><br><b>Main viewer</b></td>
+<td align="center"><a href="https://github.com/DarkCoderSc/SubSeven"><img src="https://raw.githubusercontent.com/DarkCoderSc/SubSeven/main/Assets/screenshots/main-key.png" width="300" alt="SubSeven Legacy certificate information"></a><br><b>Certificate / key information</b></td>
 </tr>
 <tr>
-<td align="center"><a href="https://github.com/DarkCoderSc/SubSeven"><img src="https://raw.githubusercontent.com/DarkCoderSc/SubSeven/main/Assets/screenshots/terminal.png" width="330" alt="SubSeven Legacy terminal"></a><br><b>Remote terminal</b></td>
-<td align="center"><a href="https://github.com/DarkCoderSc/SubSeven"><img src="https://raw.githubusercontent.com/DarkCoderSc/SubSeven/main/Assets/screenshots/files.png" width="330" alt="SubSeven Legacy file manager"></a><br><b>File manager</b></td>
+<td align="center"><a href="https://github.com/DarkCoderSc/SubSeven"><img src="https://raw.githubusercontent.com/DarkCoderSc/SubSeven/main/Assets/screenshots/terminal.png" width="300" alt="SubSeven Legacy terminal"></a><br><b>Remote terminal</b></td>
+<td align="center"><a href="https://github.com/DarkCoderSc/SubSeven"><img src="https://raw.githubusercontent.com/DarkCoderSc/SubSeven/main/Assets/screenshots/files.png" width="300" alt="SubSeven Legacy file manager"></a><br><b>File manager</b></td>
 </tr>
 <tr>
-<td align="center"><a href="https://github.com/DarkCoderSc/SubSeven"><img src="https://raw.githubusercontent.com/DarkCoderSc/SubSeven/main/Assets/screenshots/process.png" width="330" alt="SubSeven Legacy process manager"></a><br><b>Process manager</b></td>
-<td align="center"><a href="https://github.com/DarkCoderSc/SubSeven"><img src="https://raw.githubusercontent.com/DarkCoderSc/SubSeven/main/Assets/screenshots/features.png" width="330" alt="SubSeven Legacy feature overview"></a><br><b>Feature overview</b></td>
+<td align="center"><a href="https://github.com/DarkCoderSc/SubSeven"><img src="https://raw.githubusercontent.com/DarkCoderSc/SubSeven/main/Assets/screenshots/process.png" width="300" alt="SubSeven Legacy process manager"></a><br><b>Process manager</b></td>
+<td align="center"><a href="https://github.com/DarkCoderSc/SubSeven"><img src="https://raw.githubusercontent.com/DarkCoderSc/SubSeven/main/Assets/screenshots/features.png" width="300" alt="SubSeven Legacy feature overview"></a><br><b>Feature overview</b></td>
 </tr>
 </table>
 
@@ -162,9 +157,11 @@ These are hosted in the official `DarkCoderSc/SubSeven` repository. Each image l
 
 ---
 
-# Screenshot research priorities
+# Remaining visual research priorities
 
-High-priority gaps remain for 1.1–1.3, 1.5–1.8, 2.0, 2.1/2.1.1, 2.1.3, separate EditServer screens, SIN, plugin-management views, and original website pages by date.
+The main release-level gaps are now much smaller: obtain/index the direct screenshot media for **1.3**, **base 2.1**, and **2.1.3 BONUS**, and locate a strongly sourced **2.3 continuation** screenshot.
+
+Separate application/interface targets remain important: **EditServer**, **SIN**, 2.2 plugin/module views, dedicated File Manager/Registry/Process/Network windows where available, and original website layouts by date.
 
 For every new visual record, preserve the source URL, date when known, exact repository path, version identification/confidence, duplicate relationship, and a short description of what is visibly demonstrated.
 
@@ -172,7 +169,7 @@ For every new visual record, preserve the source URL, date when known, exact rep
 
 # Link reliability
 
-Repository-hosted image paths are stable relative links. Externally hosted screenshots can fail when a source host changes or GitHub Camo caches an error; therefore every external image above includes a source-page fallback.
+Repository-hosted image paths are stable relative links. Externally hosted screenshots can fail when a source host changes or GitHub Camo caches an error; therefore every external image above is clickable to a source page.
 
 Repository-local paths can be checked with:
 
