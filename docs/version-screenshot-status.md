@@ -6,6 +6,7 @@ This page maps each major SubSeven release/branch to the visual evidence current
 
 - **Hosted** — the image itself is physically stored in this repository.
 - **External sourced** — a release-specific screenshot is available through a cited research source.
+- **External retrospective** — a later historical article provides a labeled image, but it is not treated as an original-period capture.
 - **Source page** — the release-specific research page is confirmed and contains a screenshot section, but the direct media URL has not yet been indexed.
 - **Gap** — no sufficiently sourced release-specific screenshot has been cataloged yet.
 
@@ -36,7 +37,7 @@ Version history: [`version-and-file-history.md`](version-and-file-history.md)
 | **2.1.4 DEFCON 8** | External sourced | release-specific controller screenshot | [Malware Museum DEFCON 8](https://www.malware.museum/release/subseven/214-defcon-8/) |
 | **2.2** | External sourced | release-specific controller screenshot plus README screenshot | [Malware Museum 2.2](https://www.malware.museum/release/subseven/22/) · [Wikimedia README](https://commons.wikimedia.org/wiki/File:Sub7_readme_screenshot.png) |
 | **2.1.5 Legends** | External sourced | release-specific controller screenshot | [Malware Museum Legends](https://www.malware.museum/release/subseven/215-legends/) |
-| **2.3 continuation** | Gap | strongly sourced UI screenshot still needed | [Open research gaps](research-gaps.md) |
+| **2.3 continuation** | External retrospective | later retrospective article includes an image explicitly captioned `SubSeven 2.3.2010 Reborn by Read101 and fc`; an original 2010 capture remains desirable | [Retrospective article](https://readmedium.com/a-malware-retrospective-subseven-d86fed0c88bf) |
 | **Legacy** | External sourced | official project screenshots for viewer, terminal, files, processes and feature overview | [DarkCoderSc/SubSeven](https://github.com/DarkCoderSc/SubSeven) |
 
 ---
@@ -57,7 +58,7 @@ Version history: [`version-and-file-history.md`](version-and-file-history.md)
 
 # Remaining visual gaps
 
-The release-specific coverage is much better than the earlier audit indicated. The main remaining version-level gaps are **a direct media URL for 1.3, base 2.1 and 2.1.3 BONUS**, plus a strongly sourced **2.3 continuation** screenshot.
+There is now at least some sourced visual evidence for every major branch in the archive, but the evidence quality differs. The remaining release-level work is to index direct screenshot media for **1.3**, **base 2.1**, and **2.1.3 BONUS**, and to locate an **original-period 2.3** screenshot so the later retrospective reference can be supplemented or replaced.
 
 Separate application/interface gaps remain for **EditServer**, **SIN**, plugin/module screens, historical website layouts, and other non-controller windows. Those should be cataloged separately from the main controller screenshots rather than treated as substitutes for them.
 
