@@ -1,0 +1,39 @@
+domain,historical_path,category,description,archive_lookup
+sub7crew.org,/,home,Crew/community homepage,https://web.archive.org/web/*/http://sub7crew.org/
+sub7crew.org,/index.shtml,home,Alternate homepage,https://web.archive.org/web/*/http://sub7crew.org/index.shtml
+sub7crew.org,/downloads.html,downloads,Historical downloads index page,https://web.archive.org/web/*/http://sub7crew.org/downloads.html
+sub7crew.org,/downloads/,downloads,Downloads directory path,https://web.archive.org/web/*/http://sub7crew.org/downloads/
+sub7crew.org,/reference.shtml,documentation,Reference page,https://web.archive.org/web/*/http://sub7crew.org/reference.shtml
+sub7crew.org,/help.shtml,documentation,Help page,https://web.archive.org/web/*/http://sub7crew.org/help.shtml
+sub7crew.org,/subseven.shtml,project,SubSeven content page,https://web.archive.org/web/*/http://sub7crew.org/subseven.shtml
+sub7crew.org,/sub7list.shtml,community,SubSeven list page,https://web.archive.org/web/*/http://sub7crew.org/sub7list.shtml
+sub7crew.org,/irc.shtml,community,IRC page,https://web.archive.org/web/*/http://sub7crew.org/irc.shtml
+sub7crew.org,/ircbots.html,community,IRC bots page,https://web.archive.org/web/*/http://sub7crew.org/ircbots.html
+sub7crew.org,/cgi-bin/mojo/mojo.cgi?flavor=archive&list=SubSeven_Official_Mailing_List,mailing-list,Official mailing-list archive endpoint,https://web.archive.org/web/*/http://sub7crew.org/cgi-bin/mojo/mojo.cgi
+sub7crew.org,/cgi-bin/s7forum/ultimatebb.cgi,forum,Sub7 forum endpoint,https://web.archive.org/web/*/http://sub7crew.org/cgi-bin/s7forum/ultimatebb.cgi
+sub7crew.org,/gallery/,gallery,Gallery directory,https://web.archive.org/web/*/http://sub7crew.org/gallery/
+sub7crew.org,/gallery/A-trojan2.0.jpg,gallery,Archived gallery image path,https://web.archive.org/web/*/http://sub7crew.org/gallery/A-trojan2.0.jpg
+sub7crew.org,/gallery/Bionet2.9.1b.jpg,gallery,Archived gallery image path,https://web.archive.org/web/*/http://sub7crew.org/gallery/Bionet2.9.1b.jpg
+sub7crew.org,/gallery/Lamers_death2.4.jpg,gallery,Archived gallery image path,https://web.archive.org/web/*/http://sub7crew.org/gallery/Lamers_death2.4.jpg
+sub7crew.org,/images/logo.gif,asset,Site logo,https://web.archive.org/web/*/http://sub7crew.org/images/logo.gif
+sub7crew.org,/images/s7logo.jpg,asset,Sub7 logo image,https://web.archive.org/web/*/http://sub7crew.org/images/s7logo.jpg
+sub7crew.org,/images/plugins.gif,asset,Plugins navigation/art asset,https://web.archive.org/web/*/http://sub7crew.org/images/plugins.gif
+sub7crew.org,/main_files/banner.gif,asset,Site banner asset,https://web.archive.org/web/*/http://sub7crew.org/main_files/banner.gif
+sub7crew.org,/main_files/sub7.css,asset,Site stylesheet path,https://web.archive.org/web/*/http://sub7crew.org/main_files/sub7.css
+sub7crew.org,/~azzazzin/subseven/files.htm,member-page,Member-maintained SubSeven file index,https://web.archive.org/web/*/http://sub7crew.org/~azzazzin/subseven/files.htm
+sub7crew.org,/~azzazzin/subseven/links.htm,member-page,Member-maintained links page,https://web.archive.org/web/*/http://sub7crew.org/~azzazzin/subseven/links.htm
+sub7crew.org,/~azzazzin/subseven/removal.htm,defensive,Removal/help page,https://web.archive.org/web/*/http://sub7crew.org/~azzazzin/subseven/removal.htm
+sub7crew.org,/~fc/features.shtml,member-page,FC feature page,https://web.archive.org/web/*/http://sub7crew.org/~fc/features.shtml
+sub7crew.org,/~fc/downloads.shtml,member-page,FC downloads index page,https://web.archive.org/web/*/http://sub7crew.org/~fc/downloads.shtml
+sub7crew.org,/~fc/irc.shtml,member-page,FC IRC page,https://web.archive.org/web/*/http://sub7crew.org/~fc/irc.shtml
+sub7crew.org,/~mistahq/main.shtml,member-page,MistahQ main page,https://web.archive.org/web/*/http://sub7crew.org/~mistahq/main.shtml
+sub7crew.org,/~mistahq/scanner.shtml,member-page,Scanner-related historical page,https://web.archive.org/web/*/http://sub7crew.org/~mistahq/scanner.shtml
+sub7crew.org,/~mistahq/binder.shtml,member-page,Binder-related historical page,https://web.archive.org/web/*/http://sub7crew.org/~mistahq/binder.shtml
+s7help.sub7crew.org,/,documentation,SubSeven help subdomain,https://web.archive.org/web/*/http://s7help.sub7crew.org/
+sub7.net,/,home,Major classic-era domain,https://web.archive.org/web/*/http://sub7.net/
+sub7.net,/subseven/,project,Historical SubSeven area,https://web.archive.org/web/*/http://sub7.net/subseven/
+sub7.net,/subseven/downloads/,downloads,Historical downloads directory path; no live package link provided here,https://web.archive.org/web/*/http://sub7.net/subseven/downloads/
+sub7files.com,/,distribution,Release/documentation distribution site,https://web.archive.org/web/*/http://sub7files.com/
+sub7legends.net,/,community,Later Legends revival/preservation site,https://web.archive.org/web/*/http://sub7legends.net/
+come.to/subseven,/,redirect,Early vanity/redirect URL,https://web.archive.org/web/*/http://come.to/subseven
+subseven.slak.org,/,hosting,Early hosting cited in period references,https://web.archive.org/web/*/http://subseven.slak.org/
