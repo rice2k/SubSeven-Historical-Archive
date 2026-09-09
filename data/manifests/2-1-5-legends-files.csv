@@ -1,0 +1,5 @@
+filename,type,role,evidence,availability,evidence_url,notes
+SubSeven.exe,EXE,Controller/client application,Named in surviving package documentation,record-only,https://cheaters-heaven.com/games/tools/33758-sub-7-v-2-1-5.html,Classic executable not mirrored
+server.exe,EXE,Remote server component,Named in surviving package documentation,record-only,https://cheaters-heaven.com/games/tools/33758-sub-7-v-2-1-5.html,Classic executable not mirrored
+EditServer.exe,EXE,Server configuration/editor application,Named in surviving package documentation,record-only,https://cheaters-heaven.com/games/tools/33758-sub-7-v-2-1-5.html,Classic builder/configuration executable not mirrored
+ICQMAPI.dll,DLL,ICQ integration/support library,Named in surviving package documentation,record-only,https://cheaters-heaven.com/games/tools/33758-sub-7-v-2-1-5.html,Historical DLL record
