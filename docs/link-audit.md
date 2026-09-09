@@ -1,18 +1,20 @@
 # Link and Image Audit
 
-This page records the repository's navigation, image, and GitHub-link checks so broken paths are easier to detect and repair as the archive grows.
+This page records the repository's navigation, image, and source-link checks so broken paths are easier to detect and repair as the archive grows.
 
 **Last GitHub/API audit:** 2026-09-09
 
 ## Current result
 
-**PASS for the primary repository navigation and repository-hosted image paths checked through the GitHub API.**
+**PASS for the primary repository navigation and all seven repository-hosted image paths checked through the GitHub API.**
 
-The repository tree on `main` contains the README, visual site, docs, datasets, manifests, local-link checker, archive material, CSS, and the image files referenced by the main pages.
+The `main` tree contains the README, visual site, docs, datasets, manifests, local-link checker, archive material, CSS, and the hosted image files referenced by the main research pages.
+
+---
 
 ## Main README navigation
 
-The primary README links below resolve to files present on `main`:
+The primary README targets below are present on `main`:
 
 - `docs/version-and-file-history.md`
 - `data/version-feature-matrix.csv`
@@ -23,6 +25,7 @@ The primary README links below resolve to files present on `main`:
 - `docs/people-and-community.md`
 - `docs/social-history.md`
 - `docs/local-archive-findings.md`
+- `docs/repository-file-status.md`
 - `docs/image-gallery.md`
 - `docs/link-audit.md`
 - `docs/preservation-and-research-access.md`
@@ -36,39 +39,81 @@ The primary README links below resolve to files present on `main`:
 - `data/secondary-source-index.csv`
 - `index.html`
 
-The visual `index.html` also references repository-local documentation/data targets by relative path rather than by fragile branch-specific absolute URLs.
+Image metadata is also maintained in [`../data/screenshot-index.csv`](../data/screenshot-index.csv).
+
+The visual `index.html` uses repository-relative paths for local content rather than fragile commit-specific URLs.
+
+---
 
 ## Repository-hosted images
 
-The following image files are physically present in `assets/images/` and the relative paths used by README/docs match the repository tree:
+All of the following paths were confirmed present on `main`:
 
 | Repository path | Main use | Status |
 |---|---|---|
-| `assets/images/classic-subseven-interface.jpg` | Main README and visual-site classic controller image | **verified present** |
-| `assets/images/subseven-art-gallery.png` | Historical artwork/icon gallery | **verified present** |
+| `assets/images/classic-subseven-interface.jpg` | representative classic controller / README hero | **verified present** |
+| `assets/images/subseven-art-gallery.png` | historical artwork/icon reference | **verified present** |
+| `assets/images/illwill-sub7-source-provenance.jpg` | classic-source provenance capture | **verified present** |
 | `assets/images/wayback-sub7-reference.jpg` | Wayback/website research reference | **verified present** |
+| `assets/images/wayback-sub7-org-2001-retry.jpg` | Sub7.org archive-retry record | **verified present** |
+| `assets/images/wayback-sub7crew-org-2001-retry.jpg` | Sub7Crew.org archive-retry record | **verified present** |
+| `assets/images/wayback-otenet-sub7-files-2002-retry.jpg` | users.otenet.gr archive-retry record | **verified present** |
 
 Canonical gallery: [`image-gallery.md`](image-gallery.md)
 
+Machine-readable visual map: [`../data/screenshot-index.csv`](../data/screenshot-index.csv)
+
 ### Relative-path rule
 
-From the repository root / README, use:
+From the repository root / README:
 
 ```text
 assets/images/filename.ext
 ```
 
-From a page inside `docs/`, use:
+From a document under `docs/`:
 
 ```text
 ../assets/images/filename.ext
 ```
 
-This keeps images rendering correctly on normal GitHub Markdown pages and avoids dependency on a raw-content host URL.
+For a clickable Markdown/HTML image, link the image to its local file or its source page rather than leaving it as a dead decorative image.
+
+---
+
+## Badge/link rule
+
+README Shields badges are wrapped in `<a href="...">` elements. The badge graphic itself is supplied by Shields/GitHub Camo, while the click target is a repository page/data file.
+
+Current badge destinations include:
+
+| Badge | Destination |
+|---|---|
+| Historical archive | `docs/archive-source-provenance.md` |
+| Coverage | `docs/version-and-file-history.md` |
+| Classic language: Delphi / Object Pascal | `docs/source-code-and-development.md` |
+| Purpose | `docs/safety-and-scope.md` |
+| Duplicates | `data/historical-file-inventory.csv` |
+| Screenshots | `docs/image-gallery.md` |
+| Files hosted vs not hosted | `docs/repository-file-status.md` |
+
+This fixes the earlier behavior where the shield itself rendered correctly but did not navigate anywhere when clicked.
+
+---
+
+## External screenshot reliability
+
+The gallery contains external version-specific screenshots from Malware Museum, a Wikimedia Commons SubSeven 2.2 README screenshot, and modern Legacy screenshots from the official `DarkCoderSc/SubSeven` repository.
+
+Each externally hosted visual includes a **source-page fallback**. If GitHub Camo caches a failed image request or the direct media URL changes, the researcher can still open the release/source page.
+
+External image/source status is tracked separately from repository-hosted status in `data/screenshot-index.csv`.
+
+---
 
 ## Verified public GitHub source/reference links
 
-These destinations were checked against GitHub's repository API during the latest audit:
+These GitHub destinations were checked through GitHub's repository API:
 
 | Link | Type | Result |
 |---|---|---|
@@ -78,11 +123,13 @@ These destinations were checked against GitHub's repository API during the lates
 | https://github.com/rutherfordwj/SubSevenLegacy | Legacy fork | **exists; public; `main`** |
 | https://github.com/xillwillx | researcher/profile reference | profile reference; not treated as a specific SubSeven repository |
 
-The archive identifies forks as forks rather than presenting every similarly named repository as an independent historical source.
+The archive labels forks as forks rather than presenting every similarly named repository as an independent original source.
+
+---
 
 ## Important non-GitHub research links
 
-The archive currently points researchers to resources including:
+Current major research destinations include:
 
 - `https://gitlab.com/illwill/sub7`
 - `https://www.giac.org/paper/gsec/453/subseven-giving-control-machine/101094`
@@ -91,11 +138,13 @@ The archive currently points researchers to resources including:
 - `https://www.malware.museum/releases/subseven/`
 - `https://www.bsidesct.org/archives/2023/`
 
-External sites can change independently of this repository. A research URL being temporarily unavailable should not cause a repository-local image or navigation failure.
+External sites can change independently of this repository. Historical claims should therefore retain source titles/URLs and, where possible, repository-hosted screenshots or Wayback fallbacks.
+
+---
 
 ## Wayback reliability rule
 
-Wayback replay links can fail temporarily even when captures exist. Important historical pages therefore should expose both:
+Wayback replay can fail temporarily even when captures exist. Important historical pages should expose both:
 
 1. an **exact dated snapshot** when known; and
 2. a **capture-index fallback**.
@@ -105,46 +154,36 @@ For the February 2001 Sub7Files About page:
 - Exact: `https://web.archive.org/web/20010220171345/http://www.sub7files.com/about/index.shtml`
 - Capture index: `https://web.archive.org/web/*/http://www.sub7files.com/about/index.shtml`
 
-The same approach is used for important `sub7.net`, `sub7crew.org`, `sub7files.com`, `sub7legends.net`, early vanity-URL, image, CSS, and page records.
+The same method is used for important `sub7.net`, `sub7crew.org`, `sub7files.com`, `sub7legends.net`, early vanity URLs, images, CSS, and page records.
 
-## Full repository tree check
+The hosted `*-retry.jpg` files are explicitly labeled as **archive-research attempt evidence**, not screenshots of the original website design.
 
-The recursive `main` tree was checked through GitHub's API during this audit. It confirms the presence of the core structure:
-
-```text
-README.md
-index.html
-assets/styles.css
-assets/images/
-docs/
-data/
-data/manifests/
-data/raw/
-archive/fan-pages/
-tools/check_internal_links.py
-```
+---
 
 ## Local internal-link checker
 
 The repository contains [`../tools/check_internal_links.py`](../tools/check_internal_links.py). It validates Markdown/HTML relative links, local images, and HTML fragment targets without fetching external websites.
 
-Run from a local clone of the repository root:
+Run from a local repository clone:
 
 ```text
 python tools/check_internal_links.py
 ```
 
-The current ChatGPT execution environment cannot resolve `github.com` through its container network, so a fresh clone-and-run was not possible during this audit. The GitHub connector/API was used instead to validate the repository tree, primary internal targets, hosted image paths, and named GitHub repository links.
+External image URLs, archive replay, and third-party research sites require separate periodic checking because they can change independently of the GitHub repository.
+
+---
 
 ## Maintenance checklist
 
-Whenever a file is renamed, moved, or replaced:
+When a file or image is added, moved, renamed, or replaced:
 
-1. update the README quick-navigation table;
-2. update `index.html`;
+1. update README navigation when appropriate;
+2. update `index.html` if it links to the item;
 3. update cross-links under `docs/`;
-4. update `docs/image-gallery.md` for image changes;
-5. keep duplicate historical records labeled rather than silently deleting provenance;
-6. run `python tools/check_internal_links.py` from a local clone;
-7. recheck edited GitHub source/fork URLs;
-8. provide both exact and capture-index Wayback links for important archived pages.
+4. update `docs/image-gallery.md` for visual changes;
+5. update `data/screenshot-index.csv` for image hosting/source changes;
+6. keep duplicate historical records labeled rather than silently deleting provenance;
+7. run `python tools/check_internal_links.py` from a local clone;
+8. recheck edited GitHub source/fork URLs;
+9. use both exact and capture-index Wayback links for important archived pages.
