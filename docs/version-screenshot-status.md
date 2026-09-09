@@ -5,8 +5,8 @@ This page maps each major SubSeven release/branch to the visual evidence current
 **Status meanings:**
 
 - **Hosted** — the image itself is physically stored in this repository.
-- **External sourced** — the image is shown/linked from a research source and has a source-page fallback.
-- **Partial** — a nearby branch or generic classic-family image exists, but not a confidently identified screenshot for this exact release.
+- **External sourced** — a release-specific screenshot is available through a cited research source.
+- **Source page** — the release-specific research page is confirmed and contains a screenshot section, but the direct media URL has not yet been indexed.
 - **Gap** — no sufficiently sourced release-specific screenshot has been cataloged yet.
 
 Canonical gallery: [`image-gallery.md`](image-gallery.md)  
@@ -18,21 +18,21 @@ Version history: [`version-and-file-history.md`](version-and-file-history.md)
 | Version / branch | Visual status | Current visual evidence | Research/source link |
 |---|---|---|---|
 | **1.0** | External sourced | release-specific controller screenshot | [Malware Museum 1.0](https://www.malware.museum/release/subseven/10/) |
-| **1.1** | Gap | no confidently sourced 1.1 screenshot currently cataloged | [Open research gaps](research-gaps.md) |
-| **1.2** | Gap | no confidently sourced 1.2 screenshot currently cataloged | [Open research gaps](research-gaps.md) |
-| **1.3** | Gap | no confidently sourced 1.3 screenshot currently cataloged | [Open research gaps](research-gaps.md) |
+| **1.1** | External sourced | release-specific screenshot cataloged | [Malware Museum 1.1](https://www.malware.museum/release/subseven/11/) |
+| **1.2** | External sourced | release-specific screenshot cataloged | [Malware Museum 1.2](https://www.malware.museum/release/subseven/12/) |
+| **1.3** | Source page | release record exists; direct screenshot media URL still to be indexed | [Malware Museum 1.3](https://www.malware.museum/release/subseven/13/) |
 | **1.4** | External sourced | release-specific controller screenshot | [Malware Museum 1.4](https://www.malware.museum/release/subseven/14/) |
-| **1.5** | Partial | Fatsie-era identity documented, exact 1.5 screenshot still needed | [Version history](version-and-file-history.md) |
-| **1.6** | Gap | exact 1.6 screenshot still needed | [Open research gaps](research-gaps.md) |
-| **1.7** | Gap | exact 1.7 screenshot still needed | [Open research gaps](research-gaps.md) |
-| **1.8** | Partial | webcam-era feature evidence exists, exact 1.8 UI screenshot still needed | [Version history](version-and-file-history.md) |
+| **1.5** | External sourced | release-specific screenshot cataloged; useful for the blue/purple Fatsie-era transition | [Malware Museum 1.5](https://www.malware.museum/release/subseven/15/) |
+| **1.6** | External sourced | release-specific screenshot cataloged | [Malware Museum 1.6](https://www.malware.museum/release/subseven/16/) |
+| **1.7** | External sourced | release-specific screenshot cataloged | [Malware Museum 1.7](https://www.malware.museum/release/subseven/17/) |
+| **1.8** | External sourced | release-specific screenshot cataloged | [Malware Museum 1.8](https://www.malware.museum/release/subseven/18/) |
 | **1.9** | External sourced | release-specific controller screenshot | [Malware Museum 1.9](https://www.malware.museum/release/subseven/19/) |
 | **1.9 Apocalypse** | External sourced | release-specific redesigned controller screenshot | [Malware Museum Apocalypse](https://www.malware.museum/release/subseven/19-apocalypse/) |
-| **2.0** | Gap | exact 2.0 controller/editor screenshot still needed | [Open research gaps](research-gaps.md) |
-| **2.1** | Partial | extensive feature documentation exists; exact base 2.1 screenshot still needed | [Sub7Files Feb 2001 study](sub7files-about-2001.md) |
-| **2.1.1 GOLD** | Gap | exact GOLD screenshot still needed | [Open research gaps](research-gaps.md) |
+| **2.0** | External sourced | release-specific screenshot cataloged | [Malware Museum 2.0](https://www.malware.museum/release/subseven/20/) |
+| **2.1** | Source page | release-specific research page with screenshot section; direct media URL still to be indexed | [Malware Museum 2.1](https://www.malware.museum/release/subseven/21/) |
+| **2.1.1 GOLD** | External sourced | release-specific GOLD screenshot cataloged | [Malware Museum GOLD](https://www.malware.museum/release/subseven/211-gold-edition/) |
 | **2.1.2 M.U.I.E** | External sourced | release-specific controller screenshot | [Malware Museum M.U.I.E](https://www.malware.museum/release/subseven/212-muie/) |
-| **2.1.3 BONUS** | Partial | hosted source-provenance screenshot exists; exact release UI screenshot still needed | [Hosted source capture](../assets/images/illwill-sub7-source-provenance.jpg) |
+| **2.1.3 BONUS** | Source page + hosted provenance | release page contains screenshot section; hosted source-provenance capture also exists | [Malware Museum BONUS](https://www.malware.museum/release/subseven/213-bonus/) · [Hosted source capture](../assets/images/illwill-sub7-source-provenance.jpg) |
 | **2.1.4 DEFCON 8** | External sourced | release-specific controller screenshot | [Malware Museum DEFCON 8](https://www.malware.museum/release/subseven/214-defcon-8/) |
 | **2.2** | External sourced | release-specific controller screenshot plus README screenshot | [Malware Museum 2.2](https://www.malware.museum/release/subseven/22/) · [Wikimedia README](https://commons.wikimedia.org/wiki/File:Sub7_readme_screenshot.png) |
 | **2.1.5 Legends** | External sourced | release-specific controller screenshot | [Malware Museum Legends](https://www.malware.museum/release/subseven/215-legends/) |
@@ -55,8 +55,10 @@ Version history: [`version-and-file-history.md`](version-and-file-history.md)
 
 ---
 
-# Highest-priority visual gaps
+# Remaining visual gaps
 
-The most useful next recoveries are original or strongly sourced screenshots for **1.1, 1.2, 1.3, 1.5, 1.6, 1.7, 1.8, 2.0, base 2.1, 2.1.1 GOLD, 2.1.3 BONUS, and 2.3**, plus dedicated later-classic screens for **EditServer**, **SIN**, and the **2.2 plugin/module interface** where period evidence can verify the screen.
+The release-specific coverage is much better than the earlier audit indicated. The main remaining version-level gaps are **a direct media URL for 1.3, base 2.1 and 2.1.3 BONUS**, plus a strongly sourced **2.3 continuation** screenshot.
+
+Separate application/interface gaps remain for **EditServer**, **SIN**, plugin/module screens, historical website layouts, and other non-controller windows. Those should be cataloged separately from the main controller screenshots rather than treated as substitutes for them.
 
 For every added image, record its source URL, version claim, date when known, what is visibly shown, repository path if mirrored, duplicate relationship and confidence level. Do not assign a generic classic screenshot to a specific release simply because the interface looks similar.
