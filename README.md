@@ -229,7 +229,7 @@ Classic SubSeven is historically associated with Delphi/Object Pascal. The archi
 - [DarkCoderSc/SubSeven](https://github.com/DarkCoderSc/SubSeven)
 - [NoorahSmith/DarkCoderSc-SubSeven](https://github.com/NoorahSmith/DarkCoderSc-SubSeven)
 - [pawpatrolryder/SubSeven-delphi-rat-](https://github.com/pawpatrolryder/SubSeven-delphi-rat-)
-- [rutherfordwj/SubSevenLegacy](https://github.com/rice2k/SubSeven-Historical-Archive)
+- [rutherfordwj/SubSevenLegacy](https://github.com/rutherfordwj/SubSevenLegacy)
 
 ---
 
