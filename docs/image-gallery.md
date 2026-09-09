@@ -1,6 +1,6 @@
 # SubSeven / Sub7 Image & Screenshot Gallery
 
-This page is designed to stay usable even when an external image host or GitHub Camo has a temporary problem. **Questionable or malformed local image files are not embedded directly.** Release screenshots are linked to their source pages, while only stable visual sources are shown inline.
+This page is designed to stay usable even when an external image host or GitHub Camo has a temporary problem. **Questionable or unreliable image hosts are linked instead of embedded.**
 
 Machine-readable index: [`../data/screenshot-index.csv`](../data/screenshot-index.csv)  
 Release coverage map: [`version-screenshot-status.md`](version-screenshot-status.md)
@@ -9,7 +9,7 @@ Release coverage map: [`version-screenshot-status.md`](version-screenshot-status
 
 # Classic release screenshot index
 
-Each row points to a release-specific page containing screenshots or visual evidence. This is more reliable than hotlinking dozens of images into GitHub Markdown.
+Each row points to a release-specific research page containing screenshots or visual evidence. This is more reliable than hotlinking dozens of images into GitHub Markdown.
 
 | Version | Screenshot / release page | Status |
 |---|---|---|
@@ -37,15 +37,12 @@ Each row points to a release-specific page containing screenshots or visual evid
 
 ---
 
-# Stable inline visual examples
+# SubSeven 2.2 README screenshot
 
-## SubSeven 2.2 README screenshot
+The Wikimedia-hosted image repeatedly failed through GitHub/Camo, so it is deliberately **not embedded inline** here.
 
-[Open source/license page](https://commons.wikimedia.org/wiki/File:Sub7_readme_screenshot.png)
-
-<p align="center">
-  <a href="https://commons.wikimedia.org/wiki/File:Sub7_readme_screenshot.png"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Sub7_readme_screenshot.png" alt="SubSeven 2.2 README screenshot" width="700"></a>
-</p>
+**Open the preserved source/license page:**  
+[Wikimedia Commons — Sub7 readme screenshot](https://commons.wikimedia.org/wiki/File:Sub7_readme_screenshot.png)
 
 This is a documentation screenshot rather than a controller-interface image.
 
@@ -53,7 +50,7 @@ This is a documentation screenshot rather than a controller-interface image.
 
 # Modern SubSeven Legacy screenshots
 
-These images come directly from the official GitHub repository and are therefore less fragile than third-party hotlinks.
+These images come directly from the official GitHub repository and have been more reliable than third-party hotlinks.
 
 <table>
 <tr>
@@ -76,7 +73,7 @@ Official repository: [DarkCoderSc/SubSeven](https://github.com/DarkCoderSc/SubSe
 
 # Repository-preserved visual records
 
-The following files remain physically stored in `assets/images/` for provenance/research purposes. They are linked rather than embedded here until each file has been revalidated for GitHub rendering.
+The following files remain physically stored in `assets/images/` for provenance/research purposes. They are linked rather than embedded until each file has been revalidated for GitHub rendering.
 
 - [`classic-subseven-interface.jpg`](../assets/images/classic-subseven-interface.jpg) — representative classic controller/interface record
 - [`subseven-art-gallery.png`](../assets/images/subseven-art-gallery.png) — historical artwork/icon reference
