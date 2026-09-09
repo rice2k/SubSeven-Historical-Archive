@@ -1,209 +1,380 @@
 # SubSeven / Sub7 Historical Archive
 
-> **Educational / historical cybersecurity archive.** This repository documents SubSeven (Sub7), its releases, interfaces, websites, developers, file structure, related utilities, historical abuse, source-code provenance, and defensive research. Classic malware binaries and weaponized packages are **not redistributed here**; those artifacts are preserved as metadata records with version, filename, size, Drive provenance, archive references, hashes when independently verified, and historical context.
+<p align="center">
+  <img src="assets/images/classic-subseven-interface.jpg" alt="Classic SubSeven controller interface" width="760">
+</p>
 
-![Classic SubSeven interface](assets/images/classic-subseven-interface.jpg)
+<p align="center">
+  <img alt="Historical archive" src="https://img.shields.io/badge/type-historical%20archive-7c3aed">
+  <img alt="Coverage" src="https://img.shields.io/badge/coverage-1999%E2%86%92present-2563eb">
+  <img alt="Language" src="https://img.shields.io/badge/classic%20language-Delphi%20%2F%20Object%20Pascal-d97706">
+  <img alt="Purpose" src="https://img.shields.io/badge/purpose-cybersecurity%20history-059669">
+  <img alt="Duplicates" src="https://img.shields.io/badge/duplicates-preserved%20%26%20labeled-475569">
+</p>
 
-## Archive purpose
+> **Educational / historical cybersecurity archive.** This repository reconstructs the history of **SubSeven / Sub7**, one of the best-known Windows remote-access trojans of the late 1990s and early 2000s: releases, features, interfaces, developers/community, applications, EXE/DLL records, source-code provenance, websites, Wayback captures, screenshots, old documentation, distribution history and defensive context.
+>
+> Safe historical research material is preserved directly. Classic runnable malware and buildable weaponized classic RAT source are documented through exact filenames, sizes, hashes/provenance, old distribution paths, screenshots, readmes, source references and technical history rather than being republished as executable payloads.
 
-SubSeven was one of the best-known Windows remote-access trojans of the late 1990s and early 2000s. This project reconstructs the historical record around it: what versions existed, what the operator and server-side applications looked like, how the project websites changed, which EXE/DLL/project files were associated with releases, how add-ons/plugins were described, what contemporary documentation said, and how users and defenders encountered it during the AOL/ICQ/IRC/dial-up era.
+---
 
-The archive keeps four frequently confused histories separate:
+## Quick navigation
 
-1. **Original SubSeven releases (1999–2003)** — the classic malware family and its distribution/community ecosystem.
-2. **Later continuations and preservation packages** — including the reported 2.3-era continuation and archival mirrors.
-3. **Historical source-code records** — documented for provenance without republishing weaponized original malware code.
-4. **SubSeven Legacy** — the modern Delphi recreation by DarkCoderSc/Sub7Crew whose project documentation describes the removal/omission of malicious functionality.
+| Research area | Page / data |
+|---|---|
+| **What SubSeven was / how it worked** | [Overview below](#what-was-subseven) |
+| **Every version and what changed** | [`docs/version-and-file-history.md`](docs/version-and-file-history.md) |
+| **Version × feature comparison** | [`data/version-feature-matrix.csv`](data/version-feature-matrix.csv) |
+| **Detailed feature encyclopedia** | [`docs/features-and-interface.md`](docs/features-and-interface.md) |
+| **February 2001 Sub7Files About page** | [`docs/sub7files-about-2001.md`](docs/sub7files-about-2001.md) |
+| **Old websites / Wayback history** | [`docs/websites-and-wayback-history.md`](docs/websites-and-wayback-history.md) |
+| **Source code / Delphi / development** | [`docs/source-code-and-development.md`](docs/source-code-and-development.md) |
+| **People and community** | [`docs/people-and-community.md`](docs/people-and-community.md) |
+| **AOL / ICQ / IRC / social history** | [`docs/social-history.md`](docs/social-history.md) |
+| **Historical files found locally** | [`docs/local-archive-findings.md`](docs/local-archive-findings.md) |
+| **All historical records + duplicate relationships** | [`data/historical-file-inventory.csv`](data/historical-file-inventory.csv) |
+| **Historical package records** | [`data/historical-package-records.csv`](data/historical-package-records.csv) |
+| **EXE / DLL / source / project inventory** | [`data/file-inventory.csv`](data/file-inventory.csv) |
+| **Old URL / Wayback catalog** | [`data/curated-historical-urls.csv`](data/curated-historical-urls.csv) |
+| **Secondary discovery sources** | [`data/secondary-source-index.csv`](data/secondary-source-index.csv) |
+| **Visual website** | [`index.html`](index.html) |
+| **Evidence / provenance rules** | [`docs/archive-source-provenance.md`](docs/archive-source-provenance.md) |
+| **Open research gaps** | [`docs/research-gaps.md`](docs/research-gaps.md) |
 
-## Start here
+---
 
-- **[Open the full visual history site](index.html)**
-- **[Release chronology](data/releases.csv)**
-- **[EXE / DLL / source inventory](data/file-inventory.csv)**
-- **[Google Drive master inventory](data/google-drive-master-inventory.csv)**
-- **[Historical Drive package records](data/drive-historical-packages.csv)**
-- **[Old website / Wayback path catalog](data/curated-historical-urls.csv)**
-- **[Research/source ledger](data/resource-links.csv)**
-- **[Google Drive findings](docs/google-drive-findings.md)**
+# What was SubSeven?
 
-## What this archive contains
+**SubSeven** — usually shortened to **Sub7** or **S7** — was a Windows **remote-access trojan / backdoor** family first released in 1999. It combined a graphical controller with a remote server component and, over time, accumulated a very large set of remote-management, surveillance, credential-related, networking and prank functions.
 
-- Full working chronology from 1.0 through 2.1.5 Legends, the later reported 2.3 continuation, and modern SubSeven Legacy.
-- Version-specific file/DLL records including `SubSeven.exe`, `sub7.exe`, `server.exe`, `EditServer.exe`, `sin.exe`, `ICQMAPI.dll`, classic plugin-DLL architecture, and modern Legacy project/dependency files.
-- Historical package metadata recovered from Google Drive for 1.0, 1.9 Apocalypse, 2.0, 2.1.0–2.1.4, 2.2, Legends, 2.3, tutorials, compatibility/checksum material, and ancillary Sub7 archives.
-- Historical site/domain reconstruction for `come.to/subseven`, `subseven.slak.org`, `sub7.net`, `sub-7.net`, `sub7crew.org`, `s7help.sub7crew.org`, `sub7files.com`, and `sub7legends.net`.
-- Curated Wayback lookup paths derived from large private Google Drive URL crawls for `sub7crew.org` and `sub7.net`.
-- Old paths for help/reference pages, mailing-list archives, IRC, forums, galleries, member pages, CSS/GIF/JPG assets, and historical package-name records.
-- Drive-recovered classic controller imagery, SubSeven artwork/icons, and a Wayback reference screenshot.
-- A preserved **2025 fan/history HTML page** from Drive, explicitly labeled so it cannot be confused with an original 1999–2003 site.
-- CSV research datasets and separate per-version file manifests.
+The classic family is historically associated with **Borland Delphi / Object Pascal** and the Windows VCL ecosystem.
 
-## Release chronology
+SubSeven became especially visible during the era of Windows 95/98/ME, NT/2000, dial-up Internet, AOL/AIM, ICQ, IRC, email attachments, personal websites, file-sharing and early consumer webcams. Its cultural reputation came from the unusual mixture of serious remote-control/surveillance features and visible prank controls: the same controller that could display a message or open a CD tray also exposed file access, keylogging, password/account-data functions, screen/webcam monitoring and remote execution categories.
 
-| Version | Date | Branch | Codename / Edition |
-|---|---|---|---|
-| 1.0 | February 1999 | Original 1.x | — |
-| 1.1 | March 1999 | Original 1.x | — |
-| 1.2 | March 1999 | Original 1.x | — |
-| 1.3 | March 1999 | Original 1.x | — |
-| 1.4 | March 1999 | Original 1.x | — |
-| 1.5 | April 1999 | Original 1.x | — |
-| 1.6 | April 1999 | Original 1.x | — |
-| 1.7 | May 1999 | Original 1.x | — |
-| 1.8 | May 1999 | Original 1.x | — |
-| 1.9 | June 1999 | Original 1.x | — |
-| 1.9 Apocalypse | August 1999 | Original 1.x | Apocalypse |
-| 2.0 | September 1999 | Original 2.x | — |
-| 2.1 | November 1999 | Original 2.1.x | — |
-| 2.1.1 GOLD | February 2000 | Original 2.1.x | GOLD |
-| 2.1.2 M.U.I.E | April 2000 | Original 2.1.x | M.U.I.E |
-| 2.1.3 BONUS | June 2000 | Original 2.1.x | BONUS |
-| 2.1.4 DEFCON 8 | July 2000 | Original 2.1.x | DEFCON 8 |
-| 2.2 | March 2001 | Original 2.2.x | — |
-| 2.1.5 Legends | February 2003 | Original 2.1.x | Legends |
-| 2.3 | March 2010 (reported) | Community continuation | — |
-| Legacy 0.1 Alpha | 2021–2023 project activity | Non-malicious remake | Legacy |
+## High-level architecture
 
-The detailed release table records confidence, summaries, inventory status, and unresolved questions in [`data/releases.csv`](data/releases.csv).
+Classic SubSeven followed a **controller / server** model:
 
-## Application/package architecture
+```text
+┌──────────────────────────┐
+│ Controller / Client      │
+│ operator-facing GUI      │
+└────────────┬─────────────┘
+             │ remote connection
+             ▼
+┌──────────────────────────┐
+│ Server component         │
+│ remote Windows process   │
+└────────────┬─────────────┘
+             │
+             ├─ file / system information
+             ├─ process / application controls
+             ├─ screen / webcam / audio categories
+             ├─ keyboard / clipboard monitoring
+             ├─ network / connection features
+             └─ prank / visible desktop controls
+```
 
-Classic SubSeven packages commonly revolved around three core roles:
+Later releases also used a separate **EditServer** application for server configuration/customization.
 
-- **Controller / client** — operator-facing Windows GUI. Later verified names include `sub7.exe` (2.2) and `SubSeven.exe` (Legends-era material).
-- **Server component** — remotely installed component commonly named `server.exe` in documented later packages.
-- **EditServer** — `EditServer.exe`, a server configuration/builder-side application documented across multiple later branches.
+### Confirmed later-package components
 
-Additional historically documented components include:
+| Component | Version evidence | Historical purpose |
+|---|---|---|
+| `sub7.exe` | 2.2 | controller/client application |
+| `SubSeven.exe` | 2.1.5 Legends | controller/client application |
+| `server.exe` | 2.2 / Legends | remote server component |
+| `EditServer.exe` / `editserver.exe` | later classic releases | server editor/configuration application |
+| `sin.exe` | 2.2 | Static IP Notifier utility |
+| `ICQMAPI.dll` | Legends | ICQ-related support/integration library |
+| plugin DLL architecture | 2.2 | modular extension/SDK concept |
 
-- **`sin.exe`** — identified in 2.2 records as a Static IP Notifier utility.
-- **Plugin DLL architecture** — surviving 2.2 documentation describes optional plugin-style extensions; exact original distributed DLL names remain a research gap.
-- **`ICQMAPI.dll`** — named by surviving Legends-era package documentation as ICQ support/integration material.
+See the [complete EXE/DLL/source inventory](data/file-inventory.csv).
 
-The archive documents these applications without providing a procedure for deploying the classic server/payload.
+---
 
-## Programming language / implementation history
+# Release history and major differences
 
-Classic SubSeven is associated with **Borland Delphi / Object Pascal** and the Windows VCL GUI ecosystem. A later repository claims historical 2.1.3 source provenance; it is linked for research but is not mirrored here as buildable weaponized malware source.
+The archive currently tracks **21 major release / branch records**.
 
-Modern **SubSeven Legacy** is separately auditable and Delphi-based. Its repository exposes distinct Viewer, Service, Tray, Helper, certificate-generation, Secure Desktop and setup projects. Its installer manifests identify x86/x64 BASS and OpenSSL dependencies. That modern structure is documented in the Legacy manifest rather than being projected backward onto 1999-era packages.
+| Version | Date | Major historical distinction |
+|---|---|---|
+| **1.0** | Feb 1999 | first public family release; early red-interface generation |
+| **1.1** | Mar 1999 | rapid early feature expansion |
+| **1.2** | Mar 1999 | continued March development |
+| **1.3** | Mar 1999 | closely spaced incremental release; exact delta still being reconstructed |
+| **1.4** | Mar 1999 | Registry Manager category confirmed by this branch |
+| **1.5** | Apr 1999 | major visual transition to blue/purple **Fatsie** identity |
+| **1.6** | Apr 1999 | incremental Fatsie-era release |
+| **1.7** | May 1999 | incremental Fatsie-era release |
+| **1.8** | May 1999 | webcam capture confirmed by this release |
+| **1.9** | Jun 1999 | mature pre-Apocalypse 1.x branch |
+| **1.9 Apocalypse** | Aug 1999 | radical redesign bridging 1.x and later 2.x/2.1.x design |
+| **2.0** | Sep 1999 | major 2.x transition; shell-access category confirmed in surviving catalogs |
+| **2.1** | Nov 1999 | enormous mature feature set; IRC/ICQ-era integration becomes central |
+| **2.1.1 GOLD** | Feb 2000 | named GOLD edition |
+| **2.1.2 M.U.I.E** | Apr 2000 | named M.U.I.E edition; important to later source provenance |
+| **2.1.3 BONUS** | Jun 2000 | named BONUS edition; later source repo labels itself 2.1.3 |
+| **2.1.4 DEFCON 8** | Jul 2000 | named DEFCON 8 edition; later XP-labeled package path also survives |
+| **2.2** | Mar 2001 | redesigned UI/server customization, stronger NT/2000 support, expanded networking, plugin architecture |
+| **2.1.5 Legends** | Feb 2003 | late original-era release; package includes `ICQMAPI.dll` |
+| **2.3** | Mar 2010 reported | later community continuation; separated from original 1999–2003 lineage |
+| **Legacy** | 2021+ | modern non-malicious Delphi recreation inspired by the 2.2.x UX |
 
-### Version-specific application/file manifests
+The detailed release guide explains the features, files, screenshots, package evidence and confidence level **for each version individually**:
 
-- **[SubSeven 2.2 files](data/manifests/2-2-files.csv)** — `sub7.exe`, `EditServer.exe`, `server.exe`, `sin.exe`, plugin architecture record.
-- **[SubSeven 2.1.5 Legends files](data/manifests/2-1-5-legends-files.csv)** — `SubSeven.exe`, `server.exe`, `EditServer.exe`, `ICQMAPI.dll`.
-- **[SubSeven Legacy files/dependencies](data/manifests/legacy-0-1-alpha-files.csv)** — Viewer/Service/Tray/Helper projects, Secure Desktop DLL output, BASS/OpenSSL dependencies, Delphi project files and Inno Setup manifests.
+### ➜ [`docs/version-and-file-history.md`](docs/version-and-file-history.md)
 
-Safe modern Legacy dependency/project download URLs are included in the detailed manifest where verified. Classic malware executables are marked `record-only` rather than being linked as live downloads.
+Machine-readable comparison:
 
-## Google Drive preservation findings
+### ➜ [`data/version-feature-matrix.csv`](data/version-feature-matrix.csv)
 
-The connected Drive archive contains several Sub7 preservation trees. The public master inventory currently records **47+ Sub7-specific folder/file records**, including duplicates, safe visual/web material and historical package records.
+---
 
-One collection preserves package records for **1.0, 1.9 Apocalypse, 2.0, 2.1.0, 2.1.1, 2.1.2, 2.1.3, 2.1.4, 2.2, Legends, and 2.3**. It also contains:
+# Major feature families
 
-- `SubSeven And Windows XP.rar`
-- `Sub7.net Default md5sum values.rar`
-- `Tutorial_Sub7.rar`
-- `Tutorial_Sub7_2.rar`
-- `sub7-main.rar`
-- `sub7_1_9.zip`
-- `subseven20.zip`
-- `subpass.zip`
-- `subuster.zip`
+SubSeven accumulated dozens of individual controls. The archive explains what they did historically without reproducing an abuse manual.
 
-Those files are cataloged in [`data/google-drive-master-inventory.csv`](data/google-drive-master-inventory.csv) and [`data/drive-historical-packages.csv`](data/drive-historical-packages.csv). Classic executable/archive payloads are not copied into this public repository.
+### Remote management
 
-### Raw URL-crawl sources
+File Manager · Process Manager · Application/Window Manager · System Information · Registry Manager · remote shell/terminal category · screen/desktop viewing
 
-Drive also contains:
+### Surveillance / privacy-invasive functions
 
-- `_sub7crew_org_all_urls.txt` — **548,749 bytes**
-- `_sub7_net_all_urls.txt` — **65,336 bytes**
-- smaller historical ZIP/RAR URL lists
+Keylogger · Clipboard Manager · password/account-data recovery categories · webcam capture · microphone/voice recording · instant-messaging observation categories
 
-The private raw crawls mix ordinary website/assets with historical malware package paths. Their exact Drive IDs/sizes are documented in [`data/raw/README.md`](data/raw/README.md) and the master inventory. The public archive publishes normalized safe historical paths in [`data/curated-historical-urls.csv`](data/curated-historical-urls.csv) instead of becoming a live malware-download directory.
+### Network / connection functions
 
-## Historical website reconstruction
+Host/IP tools · connection notification · Network Manager · port redirect/tunnel concepts · FTP/service categories · IRC/ICQ integration · 2.2-era proxy/network-observation expansion
 
-The Drive crawl establishes a much richer `sub7crew.org` footprint than a simple homepage snapshot. Recovered historical paths include:
+### Communication / visible interaction
 
-- `downloads.html`, `downloads/`
-- `reference.shtml`
-- `help.shtml`
-- `irc.shtml`, `ircbots.html`
-- `subseven.shtml`, `sub7list.shtml`
-- the SubSeven Official Mailing List archive endpoint
-- UBB / Sub7 forum endpoints
-- gallery JPGs and old interface GIFs/CSS
-- member areas under `~azzazzin`, `~fc`, `~mistahq`, `~qroject`, and others
-- historical package-name/path records associated with 2.2, Legends and scene-era add-on tools
+Chat · messages/questions · text-to-speech · browser/URL-oriented controls
 
-### Major domains
+### Prank / “Fun” functions
+
+CD-tray controls · mouse/UI effects · desktop/window manipulation · screen/display effects · visible messages/audio effects
+
+### Configuration / ecosystem
+
+EditServer · controller preferences · server customization · connection notification · `sin.exe` · 2.2 plugin/SDK architecture · Legends-era `ICQMAPI.dll`
+
+**Feature-by-feature encyclopedia:** [`docs/features-and-interface.md`](docs/features-and-interface.md)
+
+---
+
+# February 2001: Sub7Files.com “About SubSeven”
+
+One of the most valuable period references is this exact Wayback snapshot:
+
+### [SubSeven — `www.sub7files.com/about/index.shtml` — 20 February 2001](https://web.archive.org/web/20010220171345/http://www.sub7files.com/about/index.shtml)
+
+The archived page does not always replay cleanly today. A contemporary SANS/GIAC paper independently cites the same About page (accessed 13 February 2001) and explicitly attributes its large **SubSeven 2.1 feature list** to it.
+
+That relationship is reconstructed here:
+
+- [Detailed source study](docs/sub7files-about-2001.md)
+- [SANS/GIAC contemporary paper](https://www.giac.org/paper/gsec/453/subseven-giving-control-machine/101094)
+
+---
+
+# 2.2 — the major 2001 redesign
+
+SubSeven **2.2**, publicly released in March 2001, is one of the best-documented classic branches. Contemporary reporting describes a more flexible/redesigned interface, revamped server customization, smoother Windows NT/2000 operation, a client not backward-compatible with older servers, expanded network capabilities and plugin/modular extension architecture.
+
+Confirmed package applications:
+
+- `sub7.exe`
+- `EditServer.exe`
+- `server.exe`
+- `sin.exe`
+
+Research:
+
+- [The Register — New SubSeven Trojan unleashed, 13 Mar 2001](https://www.theregister.com/security/2001/03/13/new-subseven-trojan-unleashed/855377)
+- [SANS — SubSeven 2.2: New Flavor of an Old Favorite](https://www.sans.org/white-papers/958)
+- [Malware Museum — SubSeven 2.2](https://www.malware.museum/release/subseven/22/)
+
+---
+
+# 2.1.5 Legends — February 2003
+
+Legends is the late original-era release in the familiar 2.1.x line.
+
+Known distributed files/applications include:
+
+- `server.exe`
+- `SubSeven.exe`
+- `editserver.exe`
+- `ICQMAPI.dll`
+
+Its preserved feature catalog includes the large classic management/surveillance family plus Voice Recorder and Application / Window Manager.
+
+- [Malware Museum — SubSeven 2.1.5 Legends](https://www.malware.museum/release/subseven/215-legends/)
+
+---
+
+# Source code and development history
+
+## Classic source provenance
+
+A public GitLab repository maintained by **illwill** is an important classic-source research record:
+
+### https://gitlab.com/illwill/sub7
+
+A preserved source-repository screenshot identifies the project as **“Source code for SubSeven 2.1.3.”** Its visible README describes source received as **Sub7 2.1.2-era material** directly from mobman and released publicly around the **30 September 2023 BSidesCT** event. The visible repository tree includes `Keylogger`, `[BINS]`, `client`, `editserver.new`, `server`, `Compile_Test.gif`, `README.md` and `rxlib275.zip`.
+
+The 2.1.2-vs-2.1.3 labeling discrepancy is preserved as part of the provenance record rather than silently simplified.
+
+The official BSidesCT 2023 schedule describes illwill’s **“Finding mobman”** talk as covering the acquisition of Sub7 2.1.3’s source code:
+
+- [BSidesCT 2023 archive](https://www.bsidesct.org/archives/2023/)
+
+## Modern SubSeven Legacy
+
+Official source:
+
+### https://github.com/DarkCoderSc/SubSeven
+
+The project states that Legacy is written in Delphi like the original but **does not include malicious features**. Its documented benign functions include a 2.2.x-inspired UX, File Manager, Process Manager, Remote Terminal, Windows Session Manager, modern socket/OpenSSL communication and multithreading/concurrency.
+
+Other mirrors/derivatives tracked separately:
+
+- https://github.com/NoorahSmith/DarkCoderSc-SubSeven
+- https://github.com/pawpatrolryder/SubSeven-delphi-rat-
+- https://github.com/rutherfordwj/SubSevenLegacy
+- https://github.com/xillwillx
+
+**Full development/source research:** [`docs/source-code-and-development.md`](docs/source-code-and-development.md)
+
+---
+
+# Historical files found locally
+
+A substantial local preservation collection contains release/package records, URL crawls, screenshots, artwork, checksum/tutorial material and later preservation artifacts. **Duplicate records are intentionally retained in the inventory.**
+
+### Example package records
+
+| Scope | Filename | Size | Duplicate status |
+|---|---|---:|---|
+| 1.0 | `ss.1.0-enc.rar` | 545,132 B | canonical |
+| 1.9 Apocalypse | `ss.1.9.Apocalypse-enc.rar` | 914,392 B | canonical |
+| 1.9 Apocalypse | `ss.1.9.Apocalypse-enc 2.rar` | 914,392 B | duplicate |
+| 2.0 | `ss.2.0-enc.rar` | 1,978,683 B | canonical |
+| 2.1.0 | `ss.2.1.0-enc.rar` | 1,394,230 B | canonical |
+| 2.1.0 | `ss.2.1.0-enc 2.rar` | 1,394,230 B | duplicate |
+| 2.1.1 GOLD | `ss.2.1.1-enc.rar` | 2,751,465 B | canonical |
+| 2.1.2 M.U.I.E | `ss.2.1.2-enc.rar` | 1,661,300 B | canonical |
+| 2.1.3 BONUS | `ss.2.1.3-enc.rar` | 1,429,077 B | canonical |
+| 2.1.4 DEFCON 8 | `ss.2.1.4-enc.rar` | 1,417,607 B | canonical |
+| 2.2 | `ss.2.2.0-enc.rar` | 2,921,188 B | canonical metadata record |
+| Legends | `sub7legends-enc.rar` | 1,339,783 B | canonical |
+| Legends | `sub7legends-enc 2.rar` | 1,339,783 B | duplicate |
+| 2.3 | `SubSeven_2.3.rar` | — | later continuation record |
+
+Additional records include `sub7_1_9.zip`, `subseven20.zip`, `SubSeven And Windows XP.rar`, `Sub7.net Default md5sum values.rar`, two historical tutorial archives, `sub7-main.rar`, `subpass.zip` / duplicate and `subuster.zip`.
+
+- [Detailed local archive findings](docs/local-archive-findings.md)
+- [Every historical record including duplicates](data/historical-file-inventory.csv)
+- [Package-only table](data/historical-package-records.csv)
+
+---
+
+# Duplicate policy
+
+Duplicates are **not removed from the historical record**. Every known record is labeled as one of:
+
+- `canonical`
+- `duplicate`
+- `alternate`
+- `variant`
+
+For identical safe visual/text content the repository may display one canonical copy while still retaining every duplicate provenance row. Alternate filenames are **not** assumed byte-identical unless hashes/content prove it.
+
+---
+
+# Historical websites and Wayback resources
+
+The archive tracks at least these major domains/URLs:
 
 | Domain / URL | Historical role | Wayback |
 |---|---|---|
-| `come.to/subseven` | Early redirect / vanity URL | [captures](https://web.archive.org/web/*/http://come.to/subseven) |
-| `subseven.slak.org` | Early hosting cited in period references | [captures](https://web.archive.org/web/*/http://subseven.slak.org/) |
-| `sub7.net` | Major classic project/community domain | [captures](https://web.archive.org/web/*/http://sub7.net/) |
-| `sub-7.net` | Alternate/related historical domain | [captures](https://web.archive.org/web/*/http://sub-7.net/) |
-| `sub7crew.org` | Crew/community hub with downloads, help, mailing lists, gallery, IRC and member pages | [captures](https://web.archive.org/web/*/http://sub7crew.org/) |
-| `s7help.sub7crew.org` | Help/documentation subdomain found in the Drive crawl | [captures](https://web.archive.org/web/*/http://s7help.sub7crew.org/) |
-| `sub7files.com` | Release/documentation distribution site referenced by surviving material | [captures](https://web.archive.org/web/*/http://sub7files.com/) |
-| `sub7legends.net` | Later community revival/preservation domain | [captures](https://web.archive.org/web/*/http://sub7legends.net/) |
+| `come.to/subseven` | early vanity/redirect URL | [captures](https://web.archive.org/web/*/http://come.to/subseven) |
+| `subseven.slak.org` | early host cited in period material | [captures](https://web.archive.org/web/*/http://subseven.slak.org/) |
+| `sub7.net` | major classic project/community domain | [captures](https://web.archive.org/web/*/http://sub7.net/) |
+| `sub-7.net` | alternate/related classic domain | [captures](https://web.archive.org/web/*/http://sub-7.net/) |
+| `sub7crew.org` | crew/community hub | [captures](https://web.archive.org/web/*/http://sub7crew.org/) |
+| `s7help.sub7crew.org` | help/documentation subdomain | [captures](https://web.archive.org/web/*/http://s7help.sub7crew.org/) |
+| `sub7files.com` | information/release distribution site | [captures](https://web.archive.org/web/*/http://sub7files.com/) |
+| `sub7legends.net` | later revival/community domain | [captures](https://web.archive.org/web/*/http://sub7legends.net/) |
 
-## Images and visual preservation
+Historical local URL crawls preserve old paths for help/reference, IRC, forums, mailing lists, galleries, navigation graphics, CSS/JS, member directories and historical package names.
 
-### Classic controller
+**Deep reconstruction:** [`docs/websites-and-wayback-history.md`](docs/websites-and-wayback-history.md)
 
-![Classic SubSeven controller](assets/images/classic-subseven-interface.jpg)
+---
 
-### SubSeven art / icon sheet
+# Visual archive
 
-![SubSeven art gallery](assets/images/subseven-art-gallery.png)
+<p align="center">
+  <img src="assets/images/subseven-art-gallery.png" alt="SubSeven historical artwork and icons" width="760">
+</p>
 
-### Drive-preserved Wayback reference
+Current visual records include:
 
-![Drive-preserved Wayback reference](assets/images/wayback-sub7-reference.jpg)
+- classic controller/interface imagery;
+- SubSeven artwork/icon sheet;
+- Wayback research/reference captures;
+- source-code repository capture/provenance records;
+- version-specific external screenshot/release pages linked from the detailed version history.
 
-The visual site at [`index.html`](index.html) also references the official modern Legacy repository for an additional contemporary Legacy interface example.
+Image duplicates are recorded in [`data/historical-file-inventory.csv`](data/historical-file-inventory.csv).
 
-## Preserved later fan/history artifact
+---
 
-[`archive/fan-pages/sub7-2025.html`](archive/fan-pages/sub7-2025.html) preserves the small `sub7.html` file found in Drive. A prominent provenance notice was added because the file is a **modern 2025 fan/history page**, not an original Mobman/Sub7 Crew webpage. Its historical statements should be corroborated before being treated as primary evidence.
+# Preservation status
 
-## Repository map
+Safe historical material is being copied into this repository wherever practical. The preservation inventory distinguishes:
 
-- [`index.html`](index.html) — full visual historical site
-- [`assets/images/`](assets/images/) — recovered screenshots/artwork
-- [`data/releases.csv`](data/releases.csv) — canonical release chronology
-- [`data/file-inventory.csv`](data/file-inventory.csv) — EXE/DLL/source/project inventory
-- [`data/google-drive-master-inventory.csv`](data/google-drive-master-inventory.csv) — Drive IDs, sizes, duplicates and public-treatment classification
-- [`data/resource-links.csv`](data/resource-links.csv) — research/source ledger
-- [`data/drive-historical-packages.csv`](data/drive-historical-packages.csv) — Drive package evidence
-- [`data/curated-historical-urls.csv`](data/curated-historical-urls.csv) — old website / Wayback path map
-- [`data/website-history.csv`](data/website-history.csv) — domain evolution
-- [`data/manifests/`](data/manifests/) — version-specific file manifests
-- [`data/raw/README.md`](data/raw/README.md) — provenance for private raw URL-crawl sources
-- [`docs/google-drive-findings.md`](docs/google-drive-findings.md) — Drive audit notes
-- [`docs/research-gaps.md`](docs/research-gaps.md) — unresolved targets
-- [`docs/safety-and-scope.md`](docs/safety-and-scope.md) — archival scope
-- [`archive/fan-pages/`](archive/fan-pages/) — later preservation/fan artifacts with provenance labels
+- **mirrored** — research file itself is present in GitHub;
+- **canonical safe copy** — one copy is mirrored while duplicate provenance is recorded separately;
+- **metadata-only restricted artifact** — classic runnable malware or buildable weaponized code is not mirrored;
+- **secondary discovery source** — a large mixed bookmark/link collection used to discover SubSeven material without importing unrelated content wholesale.
 
-## Core research references
+If the original local/cloud preservation set is going to be deleted, keep a separate offline copy of every **metadata-only restricted artifact**; GitHub is not intended to be the sole backup of those runnable originals.
+
+---
+
+# Research principles
+
+This archive does not collapse uncertain claims into facts. Each finding should be traceable to one or more of:
+
+1. period documentation / website capture;
+2. contemporary security research/news;
+3. surviving package/file evidence;
+4. later developer/source provenance;
+5. later preservation catalog;
+6. clearly labeled unresolved research gap.
+
+A filename in a later package does not prove it shipped with an earlier version. A later source tree does not automatically prove original authorship. A duplicate archive does not become a separate release merely because it has a second filename.
+
+See [`docs/archive-source-provenance.md`](docs/archive-source-provenance.md).
+
+---
+
+# Key research links
 
 - [Wikipedia — Sub7](https://en.wikipedia.org/wiki/Sub7)
-- [Malware Museum — SubSeven release index](https://www.malware.museum/releases/subseven/)
-- [DarkCoderSc — SubSeven Legacy](https://github.com/DarkCoderSc/SubSeven)
-- [GitLab — historical Sub7 source-code record](https://gitlab.com/illwill/sub7)
-- [Darknet Diaries EP 150 — mobman 2](https://darknetdiaries.com/episode/150/)
-- [Wayback — sub7crew.org](https://web.archive.org/web/*/http://sub7crew.org/)
-- [Wayback — sub7.net](https://web.archive.org/web/*/http://sub7.net/)
-- [Wayback — sub7files.com](https://web.archive.org/web/*/http://sub7files.com/)
-- [Wayback — sub7legends.net](https://web.archive.org/web/*/http://sub7legends.net/)
+- [Malware Museum — SubSeven release family](https://www.malware.museum/releases/subseven/)
+- [SANS/GIAC — What is SubSeven?](https://www.giac.org/paper/gsec/453/subseven-giving-control-machine/101094)
+- [SANS — SubSeven 2.2: New Flavor of an Old Favorite](https://www.sans.org/white-papers/958)
+- [The Register — New SubSeven Trojan unleashed](https://www.theregister.com/security/2001/03/13/new-subseven-trojan-unleashed/855377)
+- [BSidesCT 2023 — Finding mobman](https://www.bsidesct.org/archives/2023/)
+- [illwill/Sub7 — classic source provenance](https://gitlab.com/illwill/sub7)
+- [DarkCoderSc/SubSeven — modern Legacy source](https://github.com/DarkCoderSc/SubSeven)
 
-More leads and source classifications are in [`data/resource-links.csv`](data/resource-links.csv).
+---
 
-## Safety / archival scope
+## Repository purpose
 
-This repository is for historical study, malware-history research, digital preservation and defensive cybersecurity education. It does not provide deployment instructions, credential-theft procedures, persistence/evasion recipes, or runnable classic SubSeven payloads. Where a classic package exists in the private Drive archive, the public repository records the artifact and its provenance rather than redistributing it.
+This project exists for **digital preservation, malware history, cybersecurity education and defensive research**. It is not an official continuation of the original SubSeven project and is not intended as an operational malware distribution repository.
