@@ -1,183 +1,296 @@
-# Websites and Wayback History
+# SubSeven Websites, Domains and Wayback History
 
-This page reconstructs the historical SubSeven/Sub7 web footprint from public references plus Google Drive URL-crawl preservation.
+This page reconstructs the SubSeven/Sub7 web footprint from period references, Internet Archive captures and historical URL/path records found locally.
 
-## Domain evolution overview
+## Quick domain map
 
-### `come.to/subseven`
+| Domain / URL | Historical role | Archive entry point |
+|---|---|---|
+| `come.to/subseven` | early vanity/redirect URL | [Wayback](https://web.archive.org/web/*/http://come.to/subseven) |
+| `subseven.slak.org` | early hosting cited in period material | [Wayback](https://web.archive.org/web/*/http://subseven.slak.org/) |
+| `sub7.net` | major classic project/community domain | [Wayback](https://web.archive.org/web/*/http://sub7.net/) |
+| `sub-7.net` | alternate/related historical domain | [Wayback](https://web.archive.org/web/*/http://sub-7.net/) |
+| `sub7crew.org` | crew/community hub: downloads, help, IRC, forums, lists, gallery, member pages | [Wayback](https://web.archive.org/web/*/http://sub7crew.org/) |
+| `s7help.sub7crew.org` | help/documentation subdomain | [Wayback](https://web.archive.org/web/*/http://s7help.sub7crew.org/) |
+| `sub7files.com` | release/documentation distribution and information site | [Wayback](https://web.archive.org/web/*/http://sub7files.com/) |
+| `sub7legends.net` | later revival/preservation/community domain | [Wayback](https://web.archive.org/web/*/http://sub7legends.net/) |
 
-An early vanity/redirect-style URL associated with SubSeven references. Because redirect services could change destinations over time, preserved captures should be interpreted by capture date rather than treated as a stable canonical host.
+---
 
-Wayback lookup:
+## `come.to/subseven`
 
-- https://web.archive.org/web/*/http://come.to/subseven
+An early vanity/redirect-style URL associated with SubSeven references. Redirect services could change targets over time, so individual captures should always be interpreted by capture date rather than assumed to represent one stable host.
 
-### `subseven.slak.org`
+- [All captures](https://web.archive.org/web/*/http://come.to/subseven)
 
-An early host cited in period material and later histories.
+## `subseven.slak.org`
 
-Wayback lookup:
+Early hosting cited by period security literature and later histories.
 
-- https://web.archive.org/web/*/http://subseven.slak.org/
+- [All captures](https://web.archive.org/web/*/http://subseven.slak.org/)
 
-### `sub7.net`
+This URL matters because contemporary books/security references often pointed readers directly to `subseven.slak.org` when describing the program’s then-current distribution/homepage presence.
 
-One of the major classic project/community domains.
+---
 
-The Drive crawl `_sub7_net_all_urls.txt` preserves a broad set of paths and hostnames associated with `sub7.net`. A smaller `_sub7_net_zip_links.txt` preserves historical package-name/path records. The archive uses the former to reconstruct site history and the latter as package-distribution metadata without converting it into a live malware download directory.
+# `sub7.net`
 
-Wayback lookup:
+`sub7.net` became one of the major classic project/community domains.
 
-- https://web.archive.org/web/*/http://sub7.net/
-- https://web.archive.org/web/*/http://www.sub7.net/
+Historical local preservation includes:
 
-Drive evidence includes old package-path names corresponding to releases such as 1.0, 1.9, 1.9 Apocalypse, 2.1.4, an XP-labeled 2.1.4 package and 2.2.
+- `_sub7_net_all_urls.txt` — 65,336 bytes — canonical plus duplicate copy.
+- `_sub7_net_zip_links.txt` — 1,305 bytes — canonical plus duplicate copy.
 
-### `sub-7.net`
+The smaller package-path list is particularly useful for reconstructing distribution naming. Historical path records include release filenames associated with:
 
-Alternate/related historical domain found in later references and preservation material.
+- 1.0;
+- 1.1;
+- 1.2;
+- 1.9;
+- 1.9 Apocalypse;
+- M.U.I.E-era material;
+- 2.1.4;
+- a later XP-labeled 2.1.4 package path;
+- 2.2;
+- alternate `ss22` naming.
 
-Wayback lookup:
+These are **historical URL strings**, not current download recommendations.
 
-- https://web.archive.org/web/*/http://sub-7.net/
+Wayback:
 
-### `sub7crew.org`
+- [sub7.net captures](https://web.archive.org/web/*/http://sub7.net/)
+- [www.sub7.net captures](https://web.archive.org/web/*/http://www.sub7.net/)
 
-The Drive crawl shows that `sub7crew.org` functioned as much more than a single project homepage. Preserved historical paths include:
+---
+
+# `sub-7.net`
+
+An alternate/related historical domain present in later references and preservation material.
+
+- [Wayback captures](https://web.archive.org/web/*/http://sub-7.net/)
+
+Because similar domain names were used across different periods, the archive keeps `sub7.net` and `sub-7.net` as separate domain records rather than merging them.
+
+---
+
+# `sub7crew.org`
+
+The large historical local crawl shows that `sub7crew.org` was much more than a simple homepage. It functioned as a broader scene/community hub.
+
+Historical local preservation:
+
+- `_sub7crew_org_all_urls.txt` — **548,749 bytes** — canonical plus duplicate copy.
+- `_sub7crew_org_zip_links.txt` — **119 bytes** — canonical plus duplicate copy.
+- `_sub7crew_org_rar_links.txt` — **295 bytes** — canonical plus duplicate copy.
+
+## Main content areas represented by surviving paths
+
+### Downloads
+
+Paths include:
 
 - `/downloads.html`
 - `/downloads/`
+- older member-specific download areas
+
+The crawl also preserves names/paths corresponding to classic 2.2 and Legends packages and third-party scene utilities. They are retained as historical evidence but not exposed as live malware/tool download buttons.
+
+### Help and reference
+
+Paths include:
+
 - `/help.shtml`
 - `/reference.shtml`
-- `/irc.shtml`
-- `/ircbots.html`
+- `s7help.sub7crew.org`
+
+These are prime Wayback targets for recovering original terminology, screenshots, explanations and help-page structure.
+
+### SubSeven-specific pages
+
+Examples:
+
 - `/subseven.shtml`
 - `/sub7list.shtml`
-- `/gallery/`
-- `/images/`
-- `/ubb/`
-- `/cgi-bin/s7forum/ultimatebb.cgi`
-- mailing-list archive endpoints under `/cgi-bin/mojo/mojo.cgi`
-- member areas including `~azzazzin`, `~fc`, `~mistahq`, and `~qroject`
-
-The crawl also preserves old interface assets such as GIF/JPG buttons, tabs, logos, banners, CSS and JavaScript.
-
-Wayback lookup:
-
-- https://web.archive.org/web/*/http://sub7crew.org/
-- https://web.archive.org/web/*/http://www.sub7crew.org/
-
-### `s7help.sub7crew.org`
-
-A help/documentation subdomain present in the Drive URL crawl.
-
-Wayback lookup:
-
-- https://web.archive.org/web/*/http://s7help.sub7crew.org/
-
-### `sub7files.com`
-
-A release/documentation distribution site referenced in surviving period material.
-
-Wayback lookup:
-
-- https://web.archive.org/web/*/http://sub7files.com/
-
-### `sub7legends.net`
-
-A later preservation/revival domain associated with Legends-era community history.
-
-Wayback lookup:
-
-- https://web.archive.org/web/*/http://sub7legends.net/
-
-## `sub7crew.org` site structure recovered from Drive
-
-### Main navigation / content areas
-
-The URL crawl contains evidence for classic content categories such as:
-
-- news
-- downloads
-- help/reference
-- SubSeven-specific pages
-- IRC
-- forums
-- mailing lists
-- gallery
-- links
-- member pages
-- tutorials
-
-### Mailing list
-
-The crawl preserves endpoints whose query strings identify both a generic `sub7crew` list and a `SubSeven_Official_Mailing_List` archive. These are useful evidence for reconstructing the community/support ecosystem even when individual messages are not locally preserved.
-
-### Forums
-
-Historical UBB/Sub7 forum endpoints appear in the crawl, including `cgi-bin/s7forum/ultimatebb.cgi` and related UBB assets.
 
 ### IRC
 
-`irc.shtml` and `ircbots.html` appear in the crawl, supporting the role of IRC as part of the community/support scene around the site.
+Examples:
 
-### Gallery and interface assets
+- `/irc.shtml`
+- `/ircbots.html`
 
-The crawl preserves filenames for:
+This supports the well-documented importance of IRC to the Sub7 ecosystem and period scene communication.
 
-- old logos
-- navigation button images
-- tab images
-- header images
-- gallery screenshots
-- CSS files
-- GIF/JPG interface elements
+### Forums
 
-These filenames are valuable for future Wayback recovery because individual archived assets can often be located even when a complete page capture renders badly.
+The crawl contains UBB/Sub7 forum endpoints including:
 
-## Member-area evidence
+- `/cgi-bin/s7forum/ultimatebb.cgi`
+- `/ubb/` assets
 
-The crawl contains user/member directories under `sub7crew.org`, including paths for:
+### Mailing lists
+
+The preserved query strings identify both a generic Sub7Crew list and a **SubSeven Official Mailing List** archive endpoint under the old Mojo CGI system.
+
+Historical significance: mailing-list archives are potential primary sources for release announcements, support discussions, plugin announcements and dated community changes.
+
+### Gallery
+
+The crawl contains gallery filenames including examples such as:
+
+- `A-trojan2.0.jpg`
+- `Bionet2.9.1b.jpg`
+- `Lamers_death2.4.jpg`
+
+These indicate that the site also preserved screenshots of other RAT/trojan software, useful for understanding the broader scene rather than SubSeven alone.
+
+### Interface assets
+
+Historical filenames include:
+
+- `images/logo.gif`
+- `images/s7logo.jpg`
+- `images/news.gif`
+- `images/plugins.gif`
+- `images/help.gif`
+- many `but*.jpg` navigation buttons
+- many `tab*.jpg` tab graphics
+- header/banner files
+- CSS and JavaScript assets
+
+Exact asset-path Wayback searches can succeed even when the parent page itself renders badly.
+
+## Member areas
+
+The crawl includes personal/member directories such as:
 
 - `~azzazzin`
 - `~fc`
 - `~mistahq`
 - `~qroject`
 
-These areas included personal pages, utilities, tutorials, links, scene material and Sub7-adjacent content. The archive records their existence and safe historical page paths. Executable/tool package paths are treated as metadata-only.
+These areas contained personal pages, utilities, tutorials, links and Sub7-adjacent scene material.
 
-## Historical package-path evidence
+The archive preserves their **page/asset history** and the names of historically referenced tools. Executable package paths remain record-only.
 
-The URL crawls preserve old filenames/paths that help identify how releases and add-ons were distributed. Examples include records corresponding to:
+Wayback:
 
-- SubSeven 1.0
-- SubSeven 1.9
-- 1.9 Apocalypse
-- 2.1.4
-- 2.1.4 XP
-- 2.2
-- Legends
+- [sub7crew.org captures](https://web.archive.org/web/*/http://sub7crew.org/)
+- [www.sub7crew.org captures](https://web.archive.org/web/*/http://www.sub7crew.org/)
 
-The `sub7crew.org` crawl also contains scene-era add-on/tool package names in member directories. These names are useful for historical reconstruction but are not surfaced as live executable-download links in this public archive.
+---
 
-## How to use the Wayback Machine for this archive
+# `s7help.sub7crew.org`
 
-For historical research, use capture-index URLs rather than assuming one snapshot date is authoritative. A useful pattern is:
+A help/documentation subdomain preserved in the old path records.
+
+- [Wayback captures](https://web.archive.org/web/*/http://s7help.sub7crew.org/)
+
+This is a high-priority target for recovering original help text and screenshots because a dedicated help site can preserve version-specific terminology that later retrospectives flatten together.
+
+---
+
+# `sub7files.com`
+
+One of the most important classic-era information/distribution sites in surviving period references.
+
+## Exact February 2001 About page
+
+The user-supplied primary archive target is:
+
+**[SubSeven — `www.sub7files.com/about/index.shtml` — 20 February 2001](https://web.archive.org/web/20010220171345/http://www.sub7files.com/about/index.shtml)**
+
+The archived page does not always replay reliably today. A contemporary SANS/GIAC paper independently cites the same About page (accessed 13 February 2001) and explicitly attributes its extensive SubSeven **2.1 feature list** to that source.
+
+That relationship is documented in detail here:
+
+- [Sub7Files.com About — February 2001 source study](sub7files-about-2001.md)
+- [SANS/GIAC contemporary paper](https://www.giac.org/paper/gsec/453/subseven-giving-control-machine/101094)
+
+Other Wayback entry points:
+
+- [sub7files.com capture index](https://web.archive.org/web/*/http://sub7files.com/)
+- [www.sub7files.com capture index](https://web.archive.org/web/*/http://www.sub7files.com/)
+
+## Why this page matters
+
+It captures the project immediately before the March 2001 public release of **SubSeven 2.2** and therefore provides a period view of the mature 2.1 feature family rather than a later retrospective memory of it.
+
+---
+
+# `sub7legends.net`
+
+A later community/revival/preservation domain associated with the Legends name.
+
+- [Wayback captures](https://web.archive.org/web/*/http://sub7legends.net/)
+
+Keep this domain chronologically separate from the original 1999-era sites; similar branding does not imply the same site ownership, software lineage or historical period.
+
+---
+
+# Historical package paths vs. safe links
+
+The old crawls preserve distribution paths for classic SubSeven releases and third-party tools. In this archive they are used to answer historical questions such as:
+
+- What was the original filename?
+- Which domain/site section referenced it?
+- Which versions appeared on the same site?
+- Was there an XP-labeled compatibility package?
+- When did Legends appear in the site path record?
+- Which member areas hosted add-ons/plugins/binders/other scene utilities?
+
+They are **not** converted into a modern executable-download directory.
+
+The normalized path research table is [`../data/curated-historical-urls.csv`](../data/curated-historical-urls.csv).
+
+---
+
+# Wayback research method
+
+## 1. Use capture indexes first
+
+Pattern:
 
 `https://web.archive.org/web/*/http://HOST/PATH`
 
-This lets a researcher compare multiple captures and determine when a page, filename or site design first/last appears.
+This exposes the capture timeline and avoids assuming one snapshot is definitive.
 
-For image/CSS recovery, searching the exact historical asset path can be more successful than loading the parent page. The Drive crawl therefore preserves path-level evidence even where the original HTML is missing.
+## 2. Search exact assets
 
-## Drive-preserved screenshot records
+When a page is broken, search its historical image/CSS path directly. Old websites frequently have partial captures where the HTML exists but navigation graphics do not, or vice versa.
 
-Drive search found several later screenshots or browser captures related to this research, including duplicate Wayback reference images and a GitLab/source-reference capture. They are documented in [`drive-source-provenance.md`](drive-source-provenance.md). Duplicate screenshots are not uploaded repeatedly.
+## 3. Compare dates
 
-## Data files
+A later capture of an old filename can reflect a mirror, redirect or parked domain. Date and host must be recorded together.
 
-- [`../data/curated-historical-urls.csv`](../data/curated-historical-urls.csv) — normalized historical path catalog
-- [`../data/website-history.csv`](../data/website-history.csv) — domain evolution summary
-- [`../data/google-drive-master-inventory.csv`](../data/google-drive-master-inventory.csv) — Drive provenance
+## 4. Treat query strings carefully
 
-The raw crawl sources remain represented by metadata/provenance and curated safe paths because the original lists mix ordinary web assets with historical malware-package URLs.
+Old forum/mailing-list CGI URLs may contain meaningful archive/list identifiers. Preserve them as historical records even when they no longer execute.
+
+## 5. Separate archive failure screenshots from original site screenshots
+
+The local historical collection includes several Wayback retry/reference images. They are preserved as evidence of research attempts, but a “retry” screenshot is **not** treated as a screenshot of the original website design.
+
+---
+
+# Visual archive records related to website research
+
+Unique locally found Wayback/reference images include:
+
+- `wayback-sub7-reference.jpg`
+- a Sub7.org 2001 archive/retry reference image
+- a Sub7Crew.org 2001 archive/retry reference image
+- a users.otenet.gr Sub7 files/extras 2002 archive/retry reference image
+
+Duplicate copies are recorded in [`../data/historical-file-inventory.csv`](../data/historical-file-inventory.csv).
+
+---
+
+# Related files
+
+- [Historical file inventory](../data/historical-file-inventory.csv)
+- [Website history table](../data/website-history.csv)
+- [Curated old URL / Wayback path table](../data/curated-historical-urls.csv)
+- [Archive provenance rules](archive-source-provenance.md)
+- [Research gaps](research-gaps.md)
