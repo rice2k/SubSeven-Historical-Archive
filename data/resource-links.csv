@@ -1,0 +1,25 @@
+scope,kind,title,url,note
+General,encyclopedia,Wikipedia Sub7,https://en.wikipedia.org/wiki/Sub7,Background overview; verify disputed details against stronger sources
+General,release-catalog,Malware Museum SubSeven releases,https://www.malware.museum/releases/subseven/,Version-by-version release index
+2.2,release-catalog,Malware Museum SubSeven 2.2,https://www.malware.museum/release/subseven/22/,Classic 2.2 package/application record
+2.1.5 Legends,release-catalog,Malware Museum Legends,https://www.malware.museum/release/subseven/215-legends/,Legends release record
+2.2,period-mirror,2600 Sub7 downloads/history mirror,https://gbppr.net/2600/sub7/downloads.html,Historical page mirror; package links are not mirrored here
+2.2,period-mirror,2600 Sub7 FAQ,https://gbppr.net/2600/sub7/faq.html,Historical FAQ and SIN references
+2.2,mailing-list,SecurityFocus/Incidents mirror via SecLists,https://seclists.org/incidents/2001/Mar/96,Period 2.2 README/context mirror
+Classic,lab-analysis,2026 SubSeven lab/history article,https://iss4cf0ng.github.io/2026/02/18/2026-2-18-Subseven/,Modern isolated analysis with interface and implementation observations
+2.1.3 BONUS,source-provenance,IllWill Sub7 GitLab,https://gitlab.com/illwill/sub7,Repository identifies itself with historical 2.1.3 source provenance; not mirrored
+Legacy,source,DarkCoderSc SubSeven Legacy,https://github.com/DarkCoderSc/SubSeven,Modern non-malicious Delphi recreation
+Legacy,mirror,NoorahSmith DarkCoderSc-SubSeven mirror,https://github.com/NoorahSmith/DarkCoderSc-SubSeven,Repository mirror/reference
+Classic,archive,SubSeven-delphi-rat archive reference,https://github.com/pawpatrolryder/SubSeven-delphi-rat-,Community archival lead; provenance must be verified before claims
+General,developer,DarkCoderSc GitHub,https://github.com/DarkCoderSc,Modern Legacy developer profile
+General,developer,xillwillx GitHub,https://github.com/xillwillx,Historical/source-provenance research lead
+General,forum,ExeTools SubSeven discussion,https://exetools.com/showthread.php?t=20235,Community/reverse-engineering discussion lead
+General,web-history,Milonic sub-7.net profile,http://websites.milonic.com/sub-7.net,Secondary historical website-index lead
+General,site-history,sub7files.com historical domain,http://www.sub7files.com/,Historic domain; use Wayback for period captures
+General,interview,Darknet Diaries episode 150 mobman 2,https://darknetdiaries.com/episode/150/,Modern interview/reporting relevant to creator identity and historical claims
+General,wayback,Wayback sub7crew.org,https://web.archive.org/web/*/http://sub7crew.org/,Crew/community site captures
+General,wayback,Wayback sub7.net,https://web.archive.org/web/*/http://sub7.net/,Classic domain captures
+General,wayback,Wayback sub7files.com,https://web.archive.org/web/*/http://sub7files.com/,Distribution/documentation domain captures
+General,wayback,Wayback sub7legends.net,https://web.archive.org/web/*/http://sub7legends.net/,Later revival/preservation site captures
+General,wayback,Wayback subseven.slak.org,https://web.archive.org/web/*/http://subseven.slak.org/,Early hosting captures
+General,wayback,Wayback come.to/subseven,https://web.archive.org/web/*/http://come.to/subseven,Early vanity URL captures
