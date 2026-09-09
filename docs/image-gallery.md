@@ -1,22 +1,24 @@
 # SubSeven / Sub7 Image & Screenshot Gallery
 
-This is the canonical visual index for the archive. Every image is paired with either a repository-hosted file or a source-page fallback so a failed hotlink does not erase the research trail.
+This is the canonical visual index for the archive. Images are split into **repository-hosted**, **externally sourced**, and **inventory-only** records so researchers can immediately tell what is actually preserved here.
 
-> **Version-label rule:** a screenshot is assigned to a specific version only when the source identifies that version. Otherwise it is labeled as classic-family, website/archive, source-provenance, or modern Legacy material.
+> **Version-label rule:** a screenshot is assigned to a specific SubSeven version only when its source identifies that version. Otherwise it is labeled as classic-family, source-provenance, website/archive, or modern Legacy material.
 
 ---
 
 # Repository-hosted images
 
-## Classic SubSeven controller/interface
+These files are physically stored under `assets/images/` and use stable repository-relative links.
+
+## Classic SubSeven controller / interface
 
 <a href="../assets/images/classic-subseven-interface.jpg"><img src="../assets/images/classic-subseven-interface.jpg" alt="Classic SubSeven controller interface" width="760"></a>
 
 **Open:** [GitHub image](../assets/images/classic-subseven-interface.jpg) · [Raw image](https://raw.githubusercontent.com/rice2k/SubSeven-Historical-Archive/main/assets/images/classic-subseven-interface.jpg)
 
-**Repository path:** `assets/images/classic-subseven-interface.jpg`
-
-Representative classic controller/interface image. It should not be assigned to an exact release until stronger provenance identifies the version.
+**Repository path:** `assets/images/classic-subseven-interface.jpg`  
+**Classification:** representative classic-family controller/interface image  
+**Version:** not assigned to one exact release until stronger provenance identifies it
 
 ---
 
@@ -26,9 +28,8 @@ Representative classic controller/interface image. It should not be assigned to 
 
 **Open:** [GitHub image](../assets/images/subseven-art-gallery.png) · [Raw image](https://raw.githubusercontent.com/rice2k/SubSeven-Historical-Archive/main/assets/images/subseven-art-gallery.png)
 
-**Repository path:** `assets/images/subseven-art-gallery.png`
-
-This is presented as an artwork/icon reference rather than as one specific application version.
+**Repository path:** `assets/images/subseven-art-gallery.png`  
+**Classification:** artwork/icon preservation sheet, not one application version
 
 ---
 
@@ -38,15 +39,47 @@ This is presented as an artwork/icon reference rather than as one specific appli
 
 **Open:** [GitHub image](../assets/images/wayback-sub7-reference.jpg) · [Raw image](https://raw.githubusercontent.com/rice2k/SubSeven-Historical-Archive/main/assets/images/wayback-sub7-reference.jpg)
 
-**Repository path:** `assets/images/wayback-sub7-reference.jpg`
+**Repository path:** `assets/images/wayback-sub7-reference.jpg`  
+**Classification:** archive-research reference, not an original application screenshot
 
-This is a Wayback/research reference, not an original controller screenshot.
+---
+
+## Sub7.org — 2001 archive retry record
+
+<a href="../assets/images/wayback-sub7-org-2001-retry.jpg"><img src="../assets/images/wayback-sub7-org-2001-retry.jpg" alt="Sub7.org 2001 Wayback retry record" width="360"></a>
+
+**Open:** [GitHub image](../assets/images/wayback-sub7-org-2001-retry.jpg) · [Raw image](https://raw.githubusercontent.com/rice2k/SubSeven-Historical-Archive/main/assets/images/wayback-sub7-org-2001-retry.jpg)
+
+**Repository path:** `assets/images/wayback-sub7-org-2001-retry.jpg`  
+**Classification:** research-attempt evidence. The image says the archive screenshot was pending/unavailable; it is **not** a screenshot of the historical site's original design.
+
+---
+
+## Sub7Crew.org — 2001 archive retry record
+
+<a href="../assets/images/wayback-sub7crew-org-2001-retry.jpg"><img src="../assets/images/wayback-sub7crew-org-2001-retry.jpg" alt="Sub7Crew.org 2001 Wayback retry record" width="360"></a>
+
+**Open:** [GitHub image](../assets/images/wayback-sub7crew-org-2001-retry.jpg) · [Raw image](https://raw.githubusercontent.com/rice2k/SubSeven-Historical-Archive/main/assets/images/wayback-sub7crew-org-2001-retry.jpg)
+
+**Repository path:** `assets/images/wayback-sub7crew-org-2001-retry.jpg`  
+**Classification:** research-attempt evidence, not an original site-layout screenshot.
+
+---
+
+## users.otenet.gr — Sub7 Files and Extras — 2002 archive retry record
+
+<a href="../assets/images/wayback-otenet-sub7-files-2002-retry.jpg"><img src="../assets/images/wayback-otenet-sub7-files-2002-retry.jpg" alt="users.otenet.gr Sub7 Files and Extras 2002 Wayback retry record" width="360"></a>
+
+**Open:** [GitHub image](../assets/images/wayback-otenet-sub7-files-2002-retry.jpg) · [Raw image](https://raw.githubusercontent.com/rice2k/SubSeven-Historical-Archive/main/assets/images/wayback-otenet-sub7-files-2002-retry.jpg)
+
+**Repository path:** `assets/images/wayback-otenet-sub7-files-2002-retry.jpg`  
+**Classification:** research-attempt evidence, not an original page-layout screenshot.
 
 ---
 
 # Classic version screenshots from Malware Museum
 
-These images are shown from their original research source. Clicking an image opens the corresponding release page, which is the fallback if GitHub's image proxy or the remote image host fails.
+The following images are shown from their research-source host. Each image links to its release page, which remains the fallback if a hotlink or GitHub Camo cache fails.
 
 <table>
 <tr>
@@ -67,16 +100,16 @@ These images are shown from their original research source. Clicking an image op
 </tr>
 </table>
 
-### Additional classic screenshot / artwork sources
+Source-page fallbacks:
 
-- [SubSeven 1.0 release page](https://www.malware.museum/release/subseven/10/)
-- [SubSeven 1.4 release page](https://www.malware.museum/release/subseven/14/)
-- [SubSeven 1.9 release page](https://www.malware.museum/release/subseven/19/)
-- [1.9 Apocalypse release page](https://www.malware.museum/release/subseven/19-apocalypse/)
-- [2.1.2 M.U.I.E release page](https://www.malware.museum/release/subseven/212-muie/)
-- [2.1.4 DEFCON 8 release page](https://www.malware.museum/release/subseven/214-defcon-8/)
-- [2.2 release page](https://www.malware.museum/release/subseven/22/)
-- [2.1.5 Legends release page](https://www.malware.museum/release/subseven/215-legends/)
+- [1.0](https://www.malware.museum/release/subseven/10/)
+- [1.4](https://www.malware.museum/release/subseven/14/)
+- [1.9](https://www.malware.museum/release/subseven/19/)
+- [1.9 Apocalypse](https://www.malware.museum/release/subseven/19-apocalypse/)
+- [2.1.2 M.U.I.E](https://www.malware.museum/release/subseven/212-muie/)
+- [2.1.4 DEFCON 8](https://www.malware.museum/release/subseven/214-defcon-8/)
+- [2.2](https://www.malware.museum/release/subseven/22/)
+- [2.1.5 Legends](https://www.malware.museum/release/subseven/215-legends/)
 
 ---
 
@@ -86,13 +119,13 @@ These images are shown from their original research source. Clicking an image op
 
 **Source / license page:** [Wikimedia Commons — Sub7 readme screenshot](https://commons.wikimedia.org/wiki/File:Sub7_readme_screenshot.png)
 
-This is useful as a visual documentation artifact rather than as an application-interface screenshot.
+This is a documentation screenshot rather than a controller-interface image.
 
 ---
 
 # Modern SubSeven Legacy screenshots
 
-These are hosted in the official `DarkCoderSc/SubSeven` GitHub repository. Each image is clickable and the repository page is provided as a fallback.
+These are hosted in the official `DarkCoderSc/SubSeven` repository. Each image links back to the official project.
 
 <table>
 <tr>
@@ -113,40 +146,27 @@ These are hosted in the official `DarkCoderSc/SubSeven` GitHub repository. Each 
 
 ---
 
-# Visual records known locally but not yet hosted as unique repository images
+# Known visual record not yet physically hosted
 
-The historical inventory also records:
+The local historical inventory still records an `illwill/Sub7` source-repository screenshot showing the project tree and the `Source code for SubSeven 2.1.3` project description. Until a canonical repository-hosted copy is added, the source page remains:
 
-- a GitLab `illwill/Sub7` source-repository capture showing the project tree and its `Source code for SubSeven 2.1.3` description;
-- several distinct Wayback/retry captures associated with Sub7/Sub7Crew/other research targets;
-- duplicate copies/formats of some screenshots.
+- https://gitlab.com/illwill/sub7
 
-These remain listed in [`../data/historical-file-inventory.csv`](../data/historical-file-inventory.csv) until a canonical public copy is selected and uploaded.
-
-See [`repository-file-status.md`](repository-file-status.md) for the complete hosted/not-hosted split.
+Duplicate copies/formats remain documented in [`../data/historical-file-inventory.csv`](../data/historical-file-inventory.csv).
 
 ---
 
 # Screenshot research priorities
 
-The archive still needs strongly sourced version-specific captures for builds where current visual evidence is thin, especially 1.1–1.3, 1.5–1.8, 2.0, 2.1/2.1.1, 2.1.3, separate EditServer screens, SIN, plugin-management views, original website pages by date, and other verified UI differences.
+High-priority gaps remain for 1.1–1.3, 1.5–1.8, 2.0, 2.1/2.1.1, 2.1.3, separate EditServer screens, SIN, plugin-management views, and original website pages by date.
 
-When a screenshot is added, record:
-
-- version / branch if known;
-- source page;
-- image source URL;
-- capture/publication date if known;
-- what the screenshot actually shows;
-- whether it is original-period, later preservation, source-provenance, or modern Legacy;
-- duplicate relationship;
-- confidence level.
+For every new visual record, preserve the source URL, date when known, exact repository path, version identification/confidence, duplicate relationship, and a short description of what is visibly demonstrated.
 
 ---
 
 # Link reliability
 
-Repository-hosted image paths are stable relative links. Externally hosted screenshots can fail because a remote host changes; for that reason every external image above includes a source-page fallback.
+Repository-hosted image paths are stable relative links. Externally hosted screenshots can fail when a source host changes or GitHub Camo caches an error; therefore every external image above includes a source-page fallback.
 
 Repository-local paths can be checked with:
 
