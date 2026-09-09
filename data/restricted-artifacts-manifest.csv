@@ -1,0 +1,27 @@
+scope,filename,size_bytes,duplicate_status,artifact_class,public_preservation
+1.0,ss.1.0-enc.rar,545132,canonical,classic release archive,metadata only
+1.9 Apocalypse,ss.1.9.Apocalypse-enc.rar,914392,canonical,classic release archive,metadata only
+1.9 Apocalypse,ss.1.9.Apocalypse-enc 2.rar,914392,duplicate,classic release archive,metadata only
+2.0,ss.2.0-enc.rar,1978683,canonical,classic release archive,metadata only
+2.0,s72.0.rar,,alternate-name record,classic release archive,metadata only
+2.1.0,ss.2.1.0-enc.rar,1394230,canonical,classic release archive,metadata only
+2.1.0,ss.2.1.0-enc 2.rar,1394230,duplicate,classic release archive,metadata only
+2.1.1 GOLD,ss.2.1.1-enc.rar,2751465,canonical,classic release archive,metadata only
+2.1.2 M.U.I.E,ss.2.1.2-enc.rar,1661300,canonical,classic release archive,metadata only
+2.1.3 BONUS,ss.2.1.3-enc.rar,1429077,canonical,classic release archive,metadata only
+2.1.4 DEFCON 8,ss.2.1.4-enc.rar,1417607,canonical,classic release archive,metadata only
+2.2,ss.2.2.0-enc.rar,2921188,canonical,classic release archive,metadata only
+2.1.5 Legends,sub7legends-enc.rar,1339783,canonical,classic release archive,metadata only
+2.1.5 Legends,sub7legends-enc 2.rar,1339783,duplicate,classic release archive,metadata only
+2.3,SubSeven_2.3.rar,,canonical,later continuation archive,metadata only
+1.9,sub7_1_9.zip,1299523,canonical,classic release archive,metadata only
+2.0,subseven20.zip,1035557,canonical,classic release archive,metadata only
+General,SubSeven And Windows XP.rar,283843,canonical,compatibility/tutorial archive,metadata only
+General,Sub7.net Default md5sum values.rar,17361,canonical,checksum/reference archive,safe extracted text preferred
+General,Tutorial_Sub7.rar,1254718,canonical,historical tutorial archive,metadata only
+General,Tutorial_Sub7_2.rar,1530900,canonical,historical tutorial archive,metadata only
+General,sub7-main.rar,3012065,canonical,source-related/historical collection,metadata only
+General,subpass.zip,6319,canonical,ancillary historical archive,metadata only
+General,subpass 2.zip,6319,duplicate,ancillary historical archive,metadata only
+General,subuster.zip,29663,canonical,ancillary historical archive,metadata only
+Classic source,illwill/sub7,,external provenance,claimed classic source tree,link/provenance only
