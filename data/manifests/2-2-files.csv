@@ -1,0 +1,6 @@
+filename,type,role,evidence,availability,evidence_url,notes
+sub7.exe,EXE,Controller/client application,Confirmed on release catalog,record-only,https://www.malware.museum/release/subseven/22/,Classic malware executable not mirrored
+EditServer.exe,EXE,Server/payload configuration application,Confirmed on release catalog,record-only,https://www.malware.museum/release/subseven/22/,Classic malware-adjacent builder/configuration executable not mirrored
+server.exe,EXE,Configurable remote server component,Confirmed on release catalog,record-only,https://www.malware.museum/release/subseven/22/,Classic malware executable not mirrored
+sin.exe,EXE,Static IP Notifier utility,Confirmed on release catalog and period FAQ,record-only,https://gbppr.net/2600/sub7/faq.html,Historical utility record
+Plugin DLLs individual names not recovered,DLL,Optional extension architecture,Plugin design documented,record-only,https://gbppr.net/2600/sub7/downloads.html,Exact distributed plugin DLL names remain a research gap
