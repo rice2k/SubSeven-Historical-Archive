@@ -4,6 +4,8 @@ This is the canonical visual index for the archive. Images are split into **repo
 
 > **Version-label rule:** a screenshot is assigned to a specific SubSeven version only when its source identifies that version. Otherwise it is labeled as classic-family, source-provenance, website/archive, or modern Legacy material.
 
+Machine-readable index: [`../data/screenshot-index.csv`](../data/screenshot-index.csv)
+
 ---
 
 # Repository-hosted images
@@ -30,6 +32,20 @@ These files are physically stored under `assets/images/` and use stable reposito
 
 **Repository path:** `assets/images/subseven-art-gallery.png`  
 **Classification:** artwork/icon preservation sheet, not one application version
+
+---
+
+## illwill/Sub7 source-provenance capture
+
+<a href="../assets/images/illwill-sub7-source-provenance.jpg"><img src="../assets/images/illwill-sub7-source-provenance.jpg" alt="illwill Sub7 source repository provenance screenshot" width="760"></a>
+
+**Open:** [GitHub image](../assets/images/illwill-sub7-source-provenance.jpg) · [Raw image](https://raw.githubusercontent.com/rice2k/SubSeven-Historical-Archive/main/assets/images/illwill-sub7-source-provenance.jpg) · [Source repository](https://gitlab.com/illwill/sub7)
+
+**Repository path:** `assets/images/illwill-sub7-source-provenance.jpg`  
+**Classification:** classic source-code provenance/research capture  
+**Visible evidence:** the public GitLab project description identifies the project as `Source code for SubSeven 2.1.3`; the visible tree includes `Keylogger`, `[BINS]`, `client`, `editserver.new`, `server`, `Compile_Test.gif`, `README.md`, and `rxlib275.zip`.
+
+The archive preserves the 2.1.2-vs-2.1.3 labeling discrepancy rather than silently resolving it. See [`source-code-and-development.md`](source-code-and-development.md).
 
 ---
 
@@ -143,16 +159,6 @@ These are hosted in the official `DarkCoderSc/SubSeven` repository. Each image l
 </table>
 
 **Official repository:** https://github.com/DarkCoderSc/SubSeven
-
----
-
-# Known visual record not yet physically hosted
-
-The local historical inventory still records an `illwill/Sub7` source-repository screenshot showing the project tree and the `Source code for SubSeven 2.1.3` project description. Until a canonical repository-hosted copy is added, the source page remains:
-
-- https://gitlab.com/illwill/sub7
-
-Duplicate copies/formats remain documented in [`../data/historical-file-inventory.csv`](../data/historical-file-inventory.csv).
 
 ---
 
