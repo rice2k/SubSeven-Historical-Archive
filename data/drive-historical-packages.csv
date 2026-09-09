@@ -1,0 +1,22 @@
+version_or_scope,filename,size_bytes,classification,availability_note
+1.0,ss.1.0-enc.rar,545132,Encrypted historical release archive,Private Drive evidence; metadata only
+1.9 Apocalypse,ss.1.9.Apocalypse-enc.rar,914392,Encrypted historical release archive,Duplicate copy also present
+2.0,ss.2.0-enc.rar,1978683,Encrypted historical release archive,Private Drive evidence
+2.0,s72.0.rar,,Historical archive / alternate package name,Private Drive evidence
+2.1,ss.2.1.0-enc.rar,1394230,Encrypted historical release archive,Duplicate copy also present
+2.1.1 GOLD,ss.2.1.1-enc.rar,2751465,Encrypted historical release archive,Private Drive evidence
+2.1.2 M.U.I.E,ss.2.1.2-enc.rar,1661300,Encrypted historical release archive,Private Drive evidence
+2.1.3 BONUS,ss.2.1.3-enc.rar,1429077,Encrypted historical release archive,Private Drive evidence
+2.1.4 DEFCON 8,ss.2.1.4-enc.rar,1417607,Encrypted historical release archive,Private Drive evidence
+2.2,ss.2.2.0-enc.rar,2921188,Encrypted historical release archive,Google raw download blocked after file identified as malware
+2.1.5 Legends,sub7legends-enc.rar,1339783,Encrypted historical release archive,Duplicate copy also present
+2.3,SubSeven_2.3.rar,,Historical continuation archive,Private Drive evidence
+1.9,sub7_1_9.zip,1299523,Historical archive in Other Sub7 folder,Private Drive evidence; metadata only
+2.0,subseven20.zip,1035557,Historical archive in Other Sub7 folder,Private Drive evidence; metadata only
+General,SubSeven And Windows XP.rar,283843,Compatibility/tutorial archive,Contents not independently verified; metadata only
+General,Sub7.net Default md5sum values.rar,17361,Checksum/reference archive,Safe text extraction preferred if separately recoverable
+General,Tutorial_Sub7.rar,1254718,Historical tutorial archive,Operational content not republished
+General,Tutorial_Sub7_2.rar,1530900,Historical tutorial archive,Operational content not republished
+General,sub7-main.rar,3012065,Historical collection/source-related archive,Potentially weaponized material not redistributed
+General,subpass.zip,6319,Historical ancillary archive,Contents not independently verified
+General,subuster.zip,29663,Historical ancillary archive,Contents not independently verified
