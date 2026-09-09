@@ -1,0 +1,22 @@
+version,date,branch,codename,confidence,summary,inventory_status
+1.0,February 1999,Original 1.x,,Secondary catalog,First cataloged public release; established the controller/server lineage,No trustworthy package-level filename list recovered
+1.1,March 1999,Original 1.x,,Secondary catalog,Rapid follow-up in the first month of public growth,Package inventory not yet recovered
+1.2,March 1999,Original 1.x,,Secondary catalog,Early revision with remote file/system/surveillance functions in surviving catalogs,Package inventory not yet recovered
+1.3,March 1999,Original 1.x,,Secondary catalog,One of several closely spaced March 1999 revisions,Package inventory not yet recovered
+1.4,March 1999,Original 1.x,,Secondary catalog,Early branch with registry management in surviving catalogs,Package inventory not yet recovered
+1.5,April 1999,Original 1.x,,Secondary catalog,Continued fast development of the early interface and feature set,Package inventory not yet recovered
+1.6,April 1999,Original 1.x,,Secondary catalog,Incremental April revision,Package inventory not yet recovered
+1.7,May 1999,Original 1.x,,Secondary catalog,Incremental May revision,Package inventory not yet recovered
+1.8,May 1999,Original 1.x,,Secondary catalog,Late-May 1.x revision,Package inventory not yet recovered
+1.9,June 1999,Original 1.x,,Secondary catalog,Late plain-numbered 1.x release; webcam capability appears in surviving catalogs,Package inventory not yet recovered
+1.9 Apocalypse,August 1999,Original 1.x,Apocalypse,Secondary catalog,Branded transition release between 1.x and 2.x,Drive package record recovered
+2.0,September 1999,Original 2.x,,Mixed secondary/lab analysis,Major branch transition; controller EditServer and server components documented,Drive package and alternate package-name records recovered
+2.1,November 1999,Original 2.1.x,,Secondary catalog,Expanded recognizable controller generation,Drive 2.1.0 archive record recovered
+2.1.1 GOLD,February 2000,Original 2.1.x,GOLD,Secondary catalog,Named GOLD edition,Drive package record recovered
+2.1.2 M.U.I.E,April 2000,Original 2.1.x,M.U.I.E,Secondary catalog,Named M.U.I.E edition,Drive package record recovered
+2.1.3 BONUS,June 2000,Original 2.1.x,BONUS,Repository claim + secondary catalog,Important source-provenance release because a later repo identifies itself as 2.1.3 source,Source provenance cataloged; source not mirrored
+2.1.4 DEFCON 8,July 2000,Original 2.1.x,DEFCON 8,Secondary catalog,Named DEFCON 8 edition with broad controller feature set,Drive package record recovered
+2.2,March 2001,Original 2.2.x,,Strong secondary + archived documentation,Best-documented classic package; four principal applications and plugin architecture documented,Four executable names verified; plugin DLL names remain open
+2.1.5 Legends,February 2003,Original 2.1.x,Legends,Release catalog + surviving package documentation,Late original-era release commonly cataloged as final Mobman-era edition,Controller server editor and ICQMAPI.dll documented
+2.3,March 2010 (reported),Community continuation,,Disputed/secondary,Later continuation; exact release lineage and authorship need stronger primary snapshots,Drive archive record recovered
+Legacy 0.1 Alpha,2021–2023 project activity,Non-malicious remake,Legacy,Primary repository,Modern Delphi recreation by DarkCoderSc preserving 2.2-style visual language while omitting malicious functions,Separate modern project; source/dependencies cataloged
