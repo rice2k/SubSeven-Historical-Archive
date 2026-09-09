@@ -32,8 +32,12 @@
 | **People and community** | [`docs/people-and-community.md`](docs/people-and-community.md) |
 | **AOL / ICQ / IRC / social history** | [`docs/social-history.md`](docs/social-history.md) |
 | **Historical files found locally** | [`docs/local-archive-findings.md`](docs/local-archive-findings.md) |
+| **Image / screenshot gallery** | [`docs/image-gallery.md`](docs/image-gallery.md) |
+| **Link and image audit** | [`docs/link-audit.md`](docs/link-audit.md) |
+| **Preservation / research access** | [`docs/preservation-and-research-access.md`](docs/preservation-and-research-access.md) |
 | **All historical records + duplicate relationships** | [`data/historical-file-inventory.csv`](data/historical-file-inventory.csv) |
 | **Historical package records** | [`data/historical-package-records.csv`](data/historical-package-records.csv) |
+| **Restricted artifact manifest** | [`data/restricted-artifacts-manifest.csv`](data/restricted-artifacts-manifest.csv) |
 | **EXE / DLL / source / project inventory** | [`data/file-inventory.csv`](data/file-inventory.csv) |
 | **Old URL / Wayback catalog** | [`data/curated-historical-urls.csv`](data/curated-historical-urls.csv) |
 | **Secondary discovery sources** | [`data/secondary-source-index.csv`](data/secondary-source-index.csv) |
@@ -169,6 +173,10 @@ One of the most valuable period references is this exact Wayback snapshot:
 
 ### [SubSeven — `www.sub7files.com/about/index.shtml` — 20 February 2001](https://web.archive.org/web/20010220171345/http://www.sub7files.com/about/index.shtml)
 
+Wayback replay can be intermittent, so the archive also provides the capture index:
+
+### [Browse all captures of the About page](https://web.archive.org/web/*/http://www.sub7files.com/about/index.shtml)
+
 The archived page does not always replay cleanly today. A contemporary SANS/GIAC paper independently cites the same About page (accessed 13 February 2001) and explicitly attributes its large **SubSeven 2.1 feature list** to it.
 
 That relationship is reconstructed here:
@@ -238,11 +246,14 @@ Official source:
 
 The project states that Legacy is written in Delphi like the original but **does not include malicious features**. Its documented benign functions include a 2.2.x-inspired UX, File Manager, Process Manager, Remote Terminal, Windows Session Manager, modern socket/OpenSSL communication and multithreading/concurrency.
 
-Other mirrors/derivatives tracked separately:
+Verified public GitHub mirrors/derivatives tracked separately:
 
 - https://github.com/NoorahSmith/DarkCoderSc-SubSeven
 - https://github.com/pawpatrolryder/SubSeven-delphi-rat-
 - https://github.com/rutherfordwj/SubSevenLegacy
+
+Additional researcher/profile reference:
+
 - https://github.com/xillwillx
 
 **Full development/source research:** [`docs/source-code-and-development.md`](docs/source-code-and-development.md)
@@ -277,6 +288,7 @@ Additional records include `sub7_1_9.zip`, `subseven20.zip`, `SubSeven And Windo
 - [Detailed local archive findings](docs/local-archive-findings.md)
 - [Every historical record including duplicates](data/historical-file-inventory.csv)
 - [Package-only table](data/historical-package-records.csv)
+- [Restricted artifact manifest](data/restricted-artifacts-manifest.csv)
 
 ---
 
@@ -328,7 +340,13 @@ Current visual records include:
 - source-code repository capture/provenance records;
 - version-specific external screenshot/release pages linked from the detailed version history.
 
-Image duplicates are recorded in [`data/historical-file-inventory.csv`](data/historical-file-inventory.csv).
+<p align="center">
+  <img src="assets/images/wayback-sub7-reference.jpg" alt="SubSeven Wayback research reference" width="520">
+</p>
+
+- [Open the canonical image gallery](docs/image-gallery.md)
+- [Open the link/image audit](docs/link-audit.md)
+- [View duplicate image records](data/historical-file-inventory.csv)
 
 ---
 
@@ -341,7 +359,9 @@ Safe historical material is being copied into this repository wherever practical
 - **metadata-only restricted artifact** — classic runnable malware or buildable weaponized code is not mirrored;
 - **secondary discovery source** — a large mixed bookmark/link collection used to discover SubSeven material without importing unrelated content wholesale.
 
-If the original local/cloud preservation set is going to be deleted, keep a separate offline copy of every **metadata-only restricted artifact**; GitHub is not intended to be the sole backup of those runnable originals.
+If the original local preservation set is going to be deleted, keep a separate offline copy of every **metadata-only restricted artifact**; GitHub is not intended to be the sole backup of those runnable originals.
+
+See [`docs/preservation-and-research-access.md`](docs/preservation-and-research-access.md).
 
 ---
 
@@ -359,6 +379,20 @@ This archive does not collapse uncertain claims into facts. Each finding should 
 A filename in a later package does not prove it shipped with an earlier version. A later source tree does not automatically prove original authorship. A duplicate archive does not become a separate release merely because it has a second filename.
 
 See [`docs/archive-source-provenance.md`](docs/archive-source-provenance.md).
+
+---
+
+# Link and image reliability
+
+Repository-local README/document/image paths were audited against the current `main` branch. The main external GitHub source/mirror links were also checked through GitHub's repository API.
+
+The repository includes a standalone relative-link/image validator:
+
+```text
+python tools/check_internal_links.py
+```
+
+Audit details and Wayback fallback guidance are maintained in [`docs/link-audit.md`](docs/link-audit.md).
 
 ---
 
