@@ -1,0 +1,54 @@
+record_id,type,name,size_bytes,mime_type,historical_role,duplicate_group,duplicate_status,public_treatment,notes
+local-001,folder,Sub7 URL/site-history collection,,folder,Historical URL-crawl and site-history collection,,canonical,metadata/catalog,Local preservation collection
+local-002,folder,Sub7 URL/site-history collection (older copy),,folder,Older/duplicate preservation tree,folder-sub7-url,duplicate,metadata/catalog,Preserved as a separate provenance record
+local-003,folder,Sub7 historical release collection,,folder,Historical release/package collection,,canonical,metadata/catalog,Local preservation collection
+local-004,folder,Other Sub7,,folder,Ancillary historical package collection,,canonical,metadata/catalog,Local preservation collection
+local-005,file,_sub7crew_org_all_urls.txt,548749,text/plain,Historical URL crawl,crawl-sub7crew,canonical,publish-safe,Canonical crawl/index record
+local-006,file,_sub7crew_org_all_urls.txt,548749,text/plain,Historical URL crawl,crawl-sub7crew,duplicate,publish-safe duplicate record,Duplicate copy retained in inventory
+local-007,file,_sub7_net_all_urls.txt,65336,text/plain,Historical URL crawl,crawl-sub7net,canonical,publish-safe,Canonical crawl/index record
+local-008,file,_sub7_net_all_urls.txt,65336,text/plain,Historical URL crawl,crawl-sub7net,duplicate,publish-safe duplicate record,Duplicate copy retained in inventory
+local-009,file,_sub7_net_zip_links.txt,1305,text/plain,Historical package-path URL list,urls-sub7net-zip,canonical,record-only,Historical URL strings; not promoted as live malware downloads
+local-010,file,_sub7_net_zip_links.txt,1305,text/plain,Historical package-path URL list,urls-sub7net-zip,duplicate,record-only,Duplicate copy retained in inventory
+local-011,file,_sub7crew_org_rar_links.txt,295,text/plain,Historical RAR/add-on path list,urls-sub7crew-rar,canonical,record-only,Historical path evidence only
+local-012,file,_sub7crew_org_rar_links.txt,295,text/plain,Historical RAR/add-on path list,urls-sub7crew-rar,duplicate,record-only,Duplicate copy retained in inventory
+local-013,file,_sub7crew_org_zip_links.txt,119,text/plain,Historical ZIP/package path list,urls-sub7crew-zip,canonical,record-only,Historical path evidence only
+local-014,file,_sub7crew_org_zip_links.txt,119,text/plain,Historical ZIP/package path list,urls-sub7crew-zip,duplicate,record-only,Duplicate copy retained in inventory
+local-015,file,sub7.html,3029,text/html,2025 fan/history page,fan-sub7-html,canonical,publish-safe,Modern fan artifact; not an original 1999-2003 website
+local-016,file,sub7.html,3029,text/html,2025 fan/history page,fan-sub7-html,duplicate,publish-safe duplicate record,Duplicate copy retained in inventory
+local-017,file,1698323969143.jpg,129938,image/jpeg,Classic SubSeven controller screenshot,img-controller,canonical,publish-safe,Mirrored under assets/images with descriptive filename
+local-018,file,1698323969143.jpg,129938,image/jpeg,Classic SubSeven controller screenshot,img-controller,duplicate,publish-safe duplicate record,Duplicate copy retained in inventory
+local-019,file,art.png,1111935,image/png,SubSeven artwork/icon sheet,,canonical,publish-safe,Mirrored under assets/images with descriptive filename
+local-020,file,web.archive.org-bda1c48231.jpg,11299,image/jpeg,Wayback-related reference screenshot,,canonical,publish-safe,Archive/research visual
+local-021,file,web.archive.org-4bd740875f.jpg,11532,image/jpeg,Wayback retry/reference screenshot,img-wayback-4bd,canonical,publish-safe,Sub7.org 2001 archive retry/reference image
+local-022,file,web.archive.org-4bd740875f.jpg,11532,image/jpeg,Wayback retry/reference screenshot,img-wayback-4bd,duplicate,publish-safe duplicate record,Duplicate copy retained in inventory
+local-023,file,web.archive.org-e47480a787.jpg,10868,image/jpeg,Wayback retry/reference screenshot,img-wayback-e474,canonical,publish-safe,Sub7Crew.org 2001 archive retry/reference image
+local-024,file,web.archive.org-e47480a787.jpg,10868,image/jpeg,Wayback retry/reference screenshot,img-wayback-e474,duplicate,publish-safe duplicate record,Duplicate copy retained in inventory
+local-025,file,web.archive.org-5cad8207bd.jpg,13361,image/jpeg,Wayback retry/reference screenshot,img-wayback-5cad,canonical,publish-safe,users.otenet.gr Sub7 files/extras 2002 archive retry/reference image
+local-026,file,web.archive.org-5cad8207bd.jpg,13361,image/jpeg,Wayback retry/reference screenshot,img-wayback-5cad,duplicate,publish-safe duplicate record,Duplicate copy retained in inventory
+local-027,file,gitlab.com-80bbfaea50.png,318505,image/png,Historical source-repository screenshot,img-gitlab-source,canonical,publish-safe,Shows illwill/Sub7 source repository and README provenance claims
+local-028,file,gitlab.com-80bbfaea50.jpg,,image/jpeg,Historical source-repository screenshot,img-gitlab-source,alternate/duplicate,publish-safe duplicate record,Alternate-format copy retained in inventory
+local-029,file,ss.1.0-enc.rar,545132,application/rar,SubSeven 1.0 encrypted historical release,,canonical,metadata-only,Restricted historical artifact; not redistributed
+local-030,file,ss.1.9.Apocalypse-enc.rar,914392,application/rar,SubSeven 1.9 Apocalypse encrypted historical release,pkg-19-apocalypse,canonical,metadata-only,Restricted historical artifact; not redistributed
+local-031,file,ss.1.9.Apocalypse-enc 2.rar,914392,application/rar,SubSeven 1.9 Apocalypse encrypted historical release,pkg-19-apocalypse,duplicate,metadata-only,Duplicate archive record retained
+local-032,file,ss.2.0-enc.rar,1978683,application/rar,SubSeven 2.0 encrypted historical release,,canonical,metadata-only,Restricted historical artifact; not redistributed
+local-033,file,s72.0.rar,,application/rar,Alternate 2.0-era package name,,alternate,metadata-only,Byte identity with other 2.0 archive not assumed
+local-034,file,ss.2.1.0-enc.rar,1394230,application/rar,SubSeven 2.1.0 encrypted historical release,pkg-210,canonical,metadata-only,Restricted historical artifact; not redistributed
+local-035,file,ss.2.1.0-enc 2.rar,1394230,application/rar,SubSeven 2.1.0 encrypted historical release,pkg-210,duplicate,metadata-only,Duplicate archive record retained
+local-036,file,ss.2.1.1-enc.rar,2751465,application/rar,SubSeven 2.1.1 GOLD historical release,,canonical,metadata-only,Restricted historical artifact; not redistributed
+local-037,file,ss.2.1.2-enc.rar,1661300,application/rar,SubSeven 2.1.2 M.U.I.E historical release,,canonical,metadata-only,Restricted historical artifact; not redistributed
+local-038,file,ss.2.1.3-enc.rar,1429077,application/rar,SubSeven 2.1.3 BONUS historical release,,canonical,metadata-only,Restricted historical artifact; not redistributed
+local-039,file,ss.2.1.4-enc.rar,1417607,application/rar,SubSeven 2.1.4 DEFCON 8 historical release,,canonical,metadata-only,Restricted historical artifact; not redistributed
+local-040,file,ss.2.2.0-enc.rar,2921188,application/rar,SubSeven 2.2 historical release,,canonical,metadata-only,Restricted historical artifact; raw payload intentionally not redistributed
+local-041,file,sub7legends-enc.rar,1339783,application/rar,SubSeven 2.1.5 Legends historical release,pkg-legends,canonical,metadata-only,Restricted historical artifact; not redistributed
+local-042,file,sub7legends-enc 2.rar,1339783,application/rar,SubSeven 2.1.5 Legends historical release,pkg-legends,duplicate,metadata-only,Duplicate archive record retained
+local-043,file,SubSeven_2.3.rar,,application/rar,SubSeven 2.3 continuation archive,,canonical,metadata-only,Later continuation record; provenance tracked separately
+local-044,file,SubSeven And Windows XP.rar,283843,application/rar,Compatibility/tutorial archive,,canonical,metadata-only,Contents require independent verification
+local-045,file,Sub7.net Default md5sum values.rar,17361,application/rar,Checksum/reference archive,,canonical,metadata-only,Prefer separately verified text/checksum extraction
+local-046,file,Tutorial_Sub7.rar,1254718,application/rar,Historical tutorial archive,,canonical,metadata-only,Operational material not republished
+local-047,file,Tutorial_Sub7_2.rar,1530900,application/rar,Historical tutorial archive,,canonical,metadata-only,Operational material not republished
+local-048,file,sub7-main.rar,3012065,application/rar,Historical collection/source-related archive,,canonical,metadata-only,Potentially weaponized contents not mirrored
+local-049,file,sub7_1_9.zip,1299523,application/zip,SubSeven 1.9 historical package,,canonical,metadata-only,Restricted historical artifact; not redistributed
+local-050,file,subseven20.zip,1035557,application/zip,SubSeven 2.0 historical package,,canonical,metadata-only,Restricted historical artifact; not redistributed
+local-051,file,subpass.zip,6319,application/zip,Ancillary historical archive,pkg-subpass,canonical,metadata-only,Contents not independently verified
+local-052,file,subpass 2.zip,6319,application/zip,Ancillary historical archive,pkg-subpass,duplicate,metadata-only,Duplicate record retained
+local-053,file,subuster.zip,29663,application/zip,Ancillary historical archive,,canonical,metadata-only,Contents not independently verified
