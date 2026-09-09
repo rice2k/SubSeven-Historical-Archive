@@ -71,9 +71,15 @@ When a new image is added, record its source, capture date if known, historical 
 
 ## Link reliability
 
-Repository-local image paths are checked automatically by:
+Repository-local image paths can be checked with:
 
 - [`../tools/check_internal_links.py`](../tools/check_internal_links.py)
-- [`.github/workflows/internal-link-check.yml`](../.github/workflows/internal-link-check.yml)
+- [`link-audit.md`](link-audit.md)
 
-The workflow runs on pushes and pull requests so a renamed or deleted image cannot silently leave a broken README or documentation image link.
+Run the checker from the repository root with:
+
+```text
+python tools/check_internal_links.py
+```
+
+The automated GitHub Actions wrapper was removed after GitHub's runner failed before any validation step could start. Keeping the standalone checker avoids showing misleading red workflow failures while still preserving a repeatable link/image validation tool.
