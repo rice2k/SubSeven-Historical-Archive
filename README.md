@@ -123,7 +123,7 @@ The archive tracks **21 major release/branch records**.
 | **2.0–2.1** | mature 2.x architecture, much larger controller feature set and strong IRC/ICQ-era integration |
 | **GOLD → M.U.I.E → BONUS → DEFCON 8** | named 2.1.x editions with increasingly well-preserved screenshots/package/source evidence |
 | **2.2** | redesigned UI/editor model, stronger NT/2000-era support and plugin/modular DLL direction |
-| **2.1.5 Legends** | return to/continuation of the 2.1.x line; late original-era package with ICQ-related support DLL |
+| **2.1.5 Legends** | late original-era 2.1.x branch with ICQ-related support DLL |
 | **2.3** | later 2010 continuation associated with former community members |
 | **Legacy** | modern, source-available Delphi homage/recreation documented separately from classic malware artifacts |
 
@@ -177,7 +177,7 @@ Detailed manifests:
 
 # Visual history
 
-The main README intentionally avoids embedding questionable local image files. That prevents a malformed image from producing the giant empty/broken block visible in older revisions.
+The main README intentionally avoids fragile image hosts that have already failed through GitHub Camo.
 
 ## Reliable visual entry points
 
@@ -186,21 +186,17 @@ The main README intentionally avoids embedding questionable local image files. T
 | **Classic releases 1.0–2.1.5** | [Release-by-release screenshot coverage](docs/version-screenshot-status.md) |
 | **Full image gallery** | [Image & screenshot gallery](docs/image-gallery.md) |
 | **Machine-readable image/source index** | [`data/screenshot-index.csv`](data/screenshot-index.csv) |
-| **SubSeven 2.2 README screenshot** | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sub7_readme_screenshot.png) |
+| **SubSeven 2.2 README screenshot** | [Open source/license page on Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sub7_readme_screenshot.png) |
 | **Modern SubSeven Legacy screenshots** | [DarkCoderSc/SubSeven](https://github.com/DarkCoderSc/SubSeven) |
 | **Classic source-provenance capture** | [Source-code history](docs/source-code-and-development.md) |
 
-### Two reliable examples
-
-<p align="center">
-  <a href="https://commons.wikimedia.org/wiki/File:Sub7_readme_screenshot.png"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Sub7_readme_screenshot.png" alt="SubSeven 2.2 README screenshot" width="640"></a>
-</p>
+### Working inline example — modern Legacy
 
 <p align="center">
   <a href="https://github.com/DarkCoderSc/SubSeven"><img src="https://raw.githubusercontent.com/DarkCoderSc/SubSeven/main/Assets/screenshots/main.png" alt="Modern SubSeven Legacy viewer" width="640"></a>
 </p>
 
-If GitHub temporarily fails to proxy an external image, the image itself is always linked to its source page so the research path remains usable.
+The SubSeven 2.2 README screenshot remains linked to its Wikimedia Commons source page rather than embedded, because GitHub/Camo repeatedly failed to render that host reliably.
 
 ---
 
@@ -233,7 +229,7 @@ Classic SubSeven is historically associated with Delphi/Object Pascal. The archi
 - [DarkCoderSc/SubSeven](https://github.com/DarkCoderSc/SubSeven)
 - [NoorahSmith/DarkCoderSc-SubSeven](https://github.com/NoorahSmith/DarkCoderSc-SubSeven)
 - [pawpatrolryder/SubSeven-delphi-rat-](https://github.com/pawpatrolryder/SubSeven-delphi-rat-)
-- [rutherfordwj/SubSevenLegacy](https://github.com/rutherfordwj/SubSevenLegacy)
+- [rutherfordwj/SubSevenLegacy](https://github.com/rice2k/SubSeven-Historical-Archive)
 
 ---
 
@@ -244,32 +240,30 @@ Classic SubSeven is historically associated with Delphi/Object Pascal. The archi
 | `come.to/subseven` | early vanity/redirect URL | [captures](https://web.archive.org/web/*/http://come.to/subseven) |
 | `subseven.slak.org` | early host cited in period material | [captures](https://web.archive.org/web/*/http://subseven.slak.org/) |
 | `sub7.net` | major classic project/community domain | [captures](https://web.archive.org/web/*/http://sub7.net/) |
-| `sub-7.net` | alternate/related classic domain | [captures](https://web.archive.org/web/*/http://sub-7.net/) |
-| `sub7crew.org` | crew/community hub | [captures](https://web.archive.org/web/*/http://sub7crew.org/) |
-| `s7help.sub7crew.org` | help/documentation subdomain | [captures](https://web.archive.org/web/*/http://s7help.sub7crew.org/) |
-| `sub7files.com` | information/release site | [captures](https://web.archive.org/web/*/http://sub7files.com/) |
-| `sub7legends.net` | later revival/community domain | [captures](https://web.archive.org/web/*/http://sub7legends.net/) |
+| `sub-7.net` | alternate historical domain form | [captures](https://web.archive.org/web/*/http://sub-7.net/) |
+| `sub7crew.org` | Sub7 Crew community/project domain | [captures](https://web.archive.org/web/*/http://sub7crew.org/) |
+| `sub7files.com` | documentation/files site referenced in period material | [captures](https://web.archive.org/web/*/http://sub7files.com/) |
+| `sub7legends.net` | later Legends-era branding/domain record | [captures](https://web.archive.org/web/*/http://sub7legends.net/) |
 
 **Deep website reconstruction → [`docs/websites-and-wayback-history.md`](docs/websites-and-wayback-history.md)**
 
 ---
 
-# Historical file preservation
+# Historical preservation records
 
-Duplicate and alternate records are intentionally preserved in the data instead of silently deleted.
+Duplicate files are intentionally retained in the research inventory and labeled instead of silently discarded.
 
-| Data set | Purpose |
-|---|---|
-| [`historical-file-inventory.csv`](data/historical-file-inventory.csv) | every known historical record including duplicates/variants |
-| [`historical-package-records.csv`](data/historical-package-records.csv) | release/package-focused records |
-| [`restricted-artifacts-manifest.csv`](data/restricted-artifacts-manifest.csv) | classic runnable/buildable artifacts represented by metadata rather than payloads |
-| [`repository-file-status.md`](docs/repository-file-status.md) | what is physically hosted vs metadata-only |
+Core datasets:
 
-Duplicate labels include **canonical**, **duplicate**, **alternate**, and **variant**.
+- [`data/historical-file-inventory.csv`](data/historical-file-inventory.csv)
+- [`data/historical-package-records.csv`](data/historical-package-records.csv)
+- [`data/restricted-artifacts-manifest.csv`](data/restricted-artifacts-manifest.csv)
+- [`docs/repository-file-status.md`](docs/repository-file-status.md)
+- [`docs/preservation-and-research-access.md`](docs/preservation-and-research-access.md)
 
 ---
 
-# Repository layout
+# Repository structure
 
 ```text
 SubSeven-Historical-Archive/
@@ -277,46 +271,39 @@ SubSeven-Historical-Archive/
 ├── index.html
 ├── CONTRIBUTING.md
 ├── assets/
-│   └── images/
-├── docs/
-│   ├── version-and-file-history.md
-│   ├── version-screenshot-status.md
-│   ├── features-and-interface.md
-│   ├── image-gallery.md
-│   ├── source-code-and-development.md
-│   ├── websites-and-wayback-history.md
-│   ├── sub7files-about-2001.md
-│   ├── people-and-community.md
-│   ├── social-history.md
-│   └── link-audit.md
+│   ├── images/
+│   └── styles.css
+├── archive/
+│   └── fan-pages/
 ├── data/
+│   ├── manifests/
+│   ├── raw/
 │   ├── releases.csv
 │   ├── version-feature-matrix.csv
 │   ├── screenshot-index.csv
 │   ├── file-inventory.csv
 │   ├── historical-file-inventory.csv
-│   ├── historical-package-records.csv
-│   ├── curated-historical-urls.csv
-│   └── manifests/
-├── archive/
+│   └── historical-package-records.csv
+├── docs/
+│   ├── version-and-file-history.md
+│   ├── features-and-interface.md
+│   ├── image-gallery.md
+│   ├── version-screenshot-status.md
+│   ├── websites-and-wayback-history.md
+│   ├── source-code-and-development.md
+│   ├── people-and-community.md
+│   ├── social-history.md
+│   ├── sub7files-about-2001.md
+│   ├── repository-file-status.md
+│   └── research-gaps.md
 └── tools/
+    └── check_internal_links.py
 ```
 
 ---
 
-# Key research links
+## Research / contribution
 
-- [Wikipedia — Sub7](https://en.wikipedia.org/wiki/Sub7)
-- [Malware Museum — SubSeven family](https://www.malware.museum/releases/subseven/)
-- [SANS/GIAC — What is SubSeven?](https://www.giac.org/paper/gsec/453/subseven-giving-control-machine/101094)
-- [SANS — SubSeven 2.2](https://www.sans.org/white-papers/958)
-- [The Register — New SubSeven Trojan unleashed](https://www.theregister.com/security/2001/03/13/new-subseven-trojan-unleashed/855377)
-- [BSidesCT 2023](https://www.bsidesct.org/archives/2023/)
-- [illwill/Sub7](https://gitlab.com/illwill/sub7)
-- [DarkCoderSc/SubSeven](https://github.com/DarkCoderSc/SubSeven)
+Have an old screenshot, README, URL, magazine scan, archived page, checksum or other SubSeven historical evidence? See [`CONTRIBUTING.md`](CONTRIBUTING.md) or open the **Historical source / archive find** issue template.
 
----
-
-## Repository purpose
-
-This project exists for **digital preservation, malware history, cybersecurity education and defensive research**. It is not an official continuation of the original SubSeven project.
+This repository is an independent historical research archive and is not an official continuation of the original SubSeven project.
