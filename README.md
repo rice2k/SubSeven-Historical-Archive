@@ -247,6 +247,16 @@ Classic SubSeven is historically associated with Delphi/Object Pascal. The archi
 
 **Deep website reconstruction → [`docs/websites-and-wayback-history.md`](docs/websites-and-wayback-history.md)**
 
+## Additional external references
+
+| Resource | Why it is useful |
+|---|---|
+| [Wikipedia — Sub7](https://en.wikipedia.org/wiki/Sub7) | General historical overview and references for SubSeven/Sub7. |
+| [xillwillx on GitHub](https://github.com/xillwillx) | GitHub profile associated with preservation/research leads around the `illwill` Sub7 material. |
+| [Milonic record for sub-7.net](http://websites.milonic.com/sub-7.net) | Third-party historical/domain record for the old `sub-7.net` website. |
+| [ExeTools discussion thread](https://exetools.com/showthread.php?t=20235) | Community discussion that may contain historical/source-code context and preservation leads. |
+| [iss4cf0ng — SubSeven article (2026-02-18)](https://iss4cf0ng.github.io/2026/02/18/2026-2-18-Subseven/) | Modern research/write-up covering SubSeven and useful as a contemporary reference. |
+
 ---
 
 # Historical preservation records
